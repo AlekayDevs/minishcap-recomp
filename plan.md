@@ -1,11 +1,11 @@
 # Plan: The Minish Cap
 
-Estado (2026-11-10): solo las carpetas. La investigación (proyectos existentes y los tres caminos) está en `..\gba-recomp\docs\investigacion.md`.
+Estado (2026-11-10): enfoque decidido: motor propio y estático (`..\gba-recomp`). El motor ya lee la ROM y descubre 3998 instrucciones y 125 funciones desde la entrada (`gba-recomp trace roms\minishcap_usa.gba`). La investigación (proyectos existentes y los tres caminos) está en `..\gba-recomp\docs\investigacion.md`.
 
 ## Siguiente
 
-1. Decidir el enfoque con la investigación (recomendado: un spike propio en `gba-recomp` y comparar con `mstan/gbarecomp`).
-2. Spike: leer la ROM, desensamblar ARM/Thumb desde el punto de entrada ($08000000), localizar el bucle principal y el manejador de VBlank.
+1. ~~Decidir el enfoque~~ hecho: propio y estático.
+2. Resolver los saltos indirectos (punteros a funciones, tablas de saltos del bucle principal y del manejador de VBlank) para descubrir el resto del código.
 3. Perfil `games\minishcap_usa.toml`: entradas, tablas de saltos, ganchos.
 4. Runtime mínimo: memoria, I/O, PPU de modo 0, entrada, hasta ver el título.
 
