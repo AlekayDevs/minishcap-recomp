@@ -1,6 +1,6 @@
 # Perfil de The Legend of Zelda: The Minish Cap (USA). Solo direcciones, nombres y tamaños; ningún byte del juego.
 # Borrador: el motor (gba-recomp) todavía no lee perfiles; de momento estos datos se pasan por la línea de órdenes, p. ej.
-#   gba-recomp trace roms/minishcap_usa.gba --pointers --overlay 030056F0:080B197C:135C
+#   gba-recomp trace roms/minishcap_usa.gba --pointers --overlay 030056F0:080B197C:135C --overlay 0300404C:080AF3A4:380
 
 [game]
 id = "minishcap_usa"
@@ -16,3 +16,11 @@ name = "iwram_code"
 ram = "030056F0"
 rom = "080B197C"
 len = "135C"
+
+# El mezclador de sonido (M4A): m4aSoundInit (080AFF48) lo copia con CpuSet; origen y destino en 080AFF9C..080AFFA4,
+# control 040000E0 = 0xE0 palabras de 32 bits.
+[[overlay]]
+name = "m4a_sound_main"
+ram = "0300404C"
+rom = "080AF3A4"
+len = "380"
