@@ -1,0 +1,10 @@
+# ROMs, partidas y todo lo derivado de ellas: nunca
+*.gba
+*.srm
+*.sav
+*.sst
+/roms/
+/out/
+/target/
+*.log
+saves/
