@@ -2,7 +2,7 @@
 
 Estado (2026-11-10): enfoque decidido: motor propio y estático (`..\gba-recomp`). El motor ya lee la ROM y descubre desde la entrada 3998 instrucciones y 125 funciones, y con los punteros de los datos, las tablas de `switch` y el bloque de IWRAM, 258 487 instrucciones (559 KB), 7088 funciones y solo 15 saltos indirectos dinámicos sin resolver (`gba-recomp trace roms\minishcap_usa.gba --pointers --overlay 030056F0:080B197C:135C`). La investigación (proyectos existentes y los tres caminos) está en `..\gba-recomp\docs\investigacion.md`.
 
-El plan completo del motor (analizador, generación de C, runtime, herramientas y riesgos) está en `..gba-recompplan.md`; aquí va lo específico del juego.
+El plan completo del motor (analizador, generación de C, runtime, herramientas y riesgos) está en `..\gba-recomp\plan.md`; aquí va lo específico del juego.
 
 ## Siguiente
 
