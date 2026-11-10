@@ -1,0 +1,18 @@
+# Perfil de The Legend of Zelda: The Minish Cap (USA). Solo direcciones, nombres y tamaños; ningún byte del juego.
+# Borrador: el motor (gba-recomp) todavía no lee perfiles; de momento estos datos se pasan por la línea de órdenes, p. ej.
+#   gba-recomp trace roms/minishcap_usa.gba --pointers --overlay 030056F0:080B197C:135C
+
+[game]
+id = "minishcap_usa"
+title = "The Legend of Zelda: The Minish Cap (USA)"
+sha1 = "b4bd50e4131b027c334547b4524e2dbbd4227130"
+crc32 = "ABCEBBB1"
+entry = "08000000"      # b 080000C0; AgbMain en 08055E6C
+
+# Bloques que el arranque copia de la ROM a la RAM y que se ejecutan desde allí (código ARM en IWRAM).
+# El origen y el tamaño salen de los literales de 08055FDC..08055FE4 (la rutina de copia de 0801D66C).
+[[overlay]]
+name = "iwram_code"
+ram = "030056F0"
+rom = "080B197C"
+len = "135C"
