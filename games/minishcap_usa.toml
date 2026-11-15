@@ -24,3 +24,11 @@ name = "m4a_sound_main"
 ram = "0300404C"
 rom = "080AF3A4"
 len = "380"
+
+# Raíces dinámicas halladas ejecutando (tools/complete.sh).
+[roots]
+file = "dynamic_roots.txt"
+
+# Dónde se toman y cargan los estados guardados: el bucle principal de AgbMain (r4 = r6 = 0x03001000).
+[resume]
+address = "08055EC8"
