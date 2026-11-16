@@ -23,7 +23,13 @@ Meta: descomprimir, doble clic, elegir la ROM una vez y **Jugar**. Se hace en el
 - [x] Icono del `.exe` (2026-11-15): `build.rs` del motor escribe el recurso; `release.ps1` compila el motor en `out\engine-target` con `GBA_PORT_ICON` = el icono del juego (comprobado: el exe del paquete lleva el gorro). El manifiesto da DPI y estilo.
 - [x] Aviso de versión nueva (`update.rs` del motor): casilla «Buscar actualizaciones» (apagada por defecto), aviso Sí/No/Omitir, descarga del zip de la release, comprobación contra `SHA256SUMS`, instalación sobre la carpeta (las partidas se conservan). `release.ps1` escribe `update.info` (repo de `git remote origin`, versión) y `out\release\SHA256SUMS`. Probado de punta a punta con un servidor local que imita la API (`GBA_PORT_UPDATE_API`): 0.1.0 → 0.2.0 con `gba-port --update`. No probado: hash que no coincide de punta a punta (solo SHA-256 con vectores conocidos), ni contra GitHub de verdad.
 - [x] `scripts\check.ps1`: guarda de la ROM (`scan.py --history`), pruebas del motor y construcción real desde la ROM.
-- [ ] Primera release en GitHub (`v0.1.0`: el zip y `SHA256SUMS` de `out\release`; el nombre del zip debe acabar en `-win64.zip`) y página de descargas. Decisión del dueño: publicar es de cara afuera.
+- [ ] **Publicar: NO todavía** (decisión del dueño, 2026-11-15). Antes faltan, sin orden fijo:
+  - Seguir revisando el juego: jugarlo más tiempo, raíces dinámicas nuevas (`tools\complete.sh`), fallos de PPU, oír el sonido, estados guardados y teclas a mano, rebobinado.
+  - Traducción al español del texto (propia, nunca copia del volcado de la ROM).
+  - Versión Linux (lanzador nativo con TinyCC y SDL2 dentro, como `..\snes-recomp\linux\`) y paquete `.tar.gz`.
+  - Versión Android (como `..\snes-recomp\android\`), con aviso de actualización propio.
+  - Web de descarga en GitHub Pages (como alekaydevs.github.io/alttp-recomp).
+  - Cuando todo esté: release `v0.1.0` con los tres paquetes (el zip de Windows acaba en `-win64.zip`) y `SHA256SUMS`.
 
 ## Ideas (cuando ya se juegue)
 
