@@ -20,7 +20,10 @@ Meta: descomprimir, doble clic, elegir la ROM una vez y **Jugar**. Se hace en el
 - [x] Diseño del lanzador (2026-11-15), al estilo de alttp-recomp: tema por juego en `[launcher]` del perfil (nombre, colores, icono), marco dorado con rombos, emblema de gorro verde (`scripts\make_icon.py`, arte propio), botones redondeados, errores en rojo.
 - [x] Paquete: `scripts\release.ps1` (gba-port.exe, gba-recomp.exe, runtime, SDL2, TinyCC y `games\`; guarda contra ROM, `.sav` y C generado). Probado el zip (4,1 MiB) en una carpeta limpia: construye en 2,8 s con su TinyCC, abre el juego y guarda en `saves\`. SDL2 y TinyCC salen de un repositorio hermano (alttp-recomp) o de `-Sdl2`/`-Tcc`. Falta probarlo en un Windows sin herramientas de desarrollo.
 - [x] README del juego (es/en).
-- [ ] Aviso de versión nueva (`update.rs` de snes-recomp), icono del `.exe` (recurso con `build.rs`), `scripts\check.ps1`, release en GitHub y página de descargas.
+- [x] Icono del `.exe` (2026-11-15): `build.rs` del motor escribe el recurso; `release.ps1` compila el motor en `out\engine-target` con `GBA_PORT_ICON` = el icono del juego (comprobado: el exe del paquete lleva el gorro). El manifiesto da DPI y estilo.
+- [x] Aviso de versión nueva (`update.rs` del motor): casilla «Buscar actualizaciones» (apagada por defecto), aviso Sí/No/Omitir, descarga del zip de la release, comprobación contra `SHA256SUMS`, instalación sobre la carpeta (las partidas se conservan). `release.ps1` escribe `update.info` (repo de `git remote origin`, versión) y `out\release\SHA256SUMS`. Probado de punta a punta con un servidor local que imita la API (`GBA_PORT_UPDATE_API`): 0.1.0 → 0.2.0 con `gba-port --update`. No probado: hash que no coincide de punta a punta (solo SHA-256 con vectores conocidos), ni contra GitHub de verdad.
+- [x] `scripts\check.ps1`: guarda de la ROM (`scan.py --history`), pruebas del motor y construcción real desde la ROM.
+- [ ] Primera release en GitHub (`v0.1.0`: el zip y `SHA256SUMS` de `out\release`; el nombre del zip debe acabar en `-win64.zip`) y página de descargas. Decisión del dueño: publicar es de cara afuera.
 
 ## Ideas (cuando ya se juegue)
 

@@ -67,6 +67,10 @@ if (Test-Path $aviso) { Copy-Item $aviso "$stage\toolchain" }
 Copy-Item README.md, LICENSE $stage
 if (Test-Path README.es.md) { Copy-Item README.es.md $stage }
 Copy-Item games $stage -Recurse
+# lo lee el aviso de version nueva del lanzador (update.rs del motor): repositorio y version instalada
+$remote = (git remote get-url origin 2>$null)
+if ($remote -notmatch 'github\.com[:/]([^/]+/[^/]+?)(\.git)?$') { throw "no se el repositorio de GitHub (git remote origin: '$remote')" }
+Set-Content -Path "$stage\update.info" -Value "repo=$($Matches[1])`nversion=$Version" -Encoding ASCII
 # del motor solo va lo que se ejecuta o se compila: fuera las pruebas y utilidades del runtime
 Get-ChildItem "$stage\runtime" -File | Where-Object { $_.Name -in "bios_test.c", "gba_test.c", "run_headless.c" } | Remove-Item
 
@@ -86,4 +90,9 @@ if ($big) { Remove-Item -Recurse -Force $stage; throw "fichero sospechosamente g
 $zip = Join-Path $root "out\release\$name.zip"
 if (Test-Path $zip) { Remove-Item -Force $zip }
 Compress-Archive -Path $stage -DestinationPath $zip
+# SHA256SUMS: el aviso de version nueva comprueba el zip contra este fichero de la misma release
+$hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+$sums = Join-Path $root "out\release\SHA256SUMS"
+$keep = if (Test-Path $sums) { Get-Content $sums | Where-Object { $_ -notmatch [regex]::Escape("$name.zip") } } else { @() }
+Set-Content -Path $sums -Value (@($keep) + "$hash  $name.zip") -Encoding ASCII
 Write-Host "creado $zip ($([math]::Round((Get-Item $zip).Length / 1MB, 1)) MiB)"
