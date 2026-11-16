@@ -11,6 +11,15 @@ El plan completo del motor (analizador, generación de C, runtime, herramientas 
 3. Perfil `games\minishcap_usa.toml` (hay un borrador con el bloque de IWRAM): entradas, tablas de saltos, ganchos; que el motor lo lea. Ya incluye el bloque del mezclador de sonido (`0x0300404C`).
 4. Runtime mínimo: memoria, I/O, PPU de modo 0, entrada, hasta ver el título.
 
+## Lanzador (como alttp-recomp)
+
+Meta: descomprimir, doble clic, elegir la ROM una vez y **Jugar**. Se hace en el motor (`..\gba-recomp`), copiando el diseño de `..\snes-recomp` (`port.rs`, `launcher.rs`, `launcher_win.rs`, `update.rs`).
+- [x] `gba-port <rom.gba>` (2026-11-15, consola): identifica la ROM por CRC32 con `games\*.toml`, genera el C, compila con TinyCC + runtime + SDL2 (2,7 s), caché por juego/CRC/versión, recuerda la última ROM. Prueba: `GBA_PORT_CACHE=<dir> gba-port roms\minishcap_usa.gba [--no-launch]`.
+- [ ] Ventana de Windows (elegir ROM, Jugar, progreso, errores, idioma es/en) y subsistema `windows` con consola enganchada.
+- [ ] Partidas en `saves\` junto al exe (hoy `play` escribe `<rom>.sav` junto a la ROM).
+- [ ] Paquete: `scripts\release.ps1` (motor + `games\` + TinyCC + SDL2, sin ROM ni C generado) y `scripts\update-engine.ps1`.
+- [ ] Aviso de versión nueva, icono, README del juego (es/en), `scripts\check.ps1`.
+
 ## Ideas (cuando ya se juegue)
 
 Las mismas mejoras de calidad de vida que en alttp-recomp, apagadas por defecto y sin romper la dificultad; pantalla ancha; traducción al español del texto (propio, nunca copia del volcado de la ROM).
