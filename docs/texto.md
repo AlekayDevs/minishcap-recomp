@@ -20,10 +20,23 @@ Al cargar la ROM, el runtime llama a un C del juego (`games/minishcap_usa/text.c
 
 Nada de esto se guarda en el repositorio salvo `es.txt`. Un volcado del inglés (`gba-recomp text-dump`, por hacer) se escribe junto a la ROM del usuario y no se sube.
 
+## La fuente (hallada el 2026-11-15 con el trazador del motor)
+
+- Tabla de glifos en la ROM: el glifo del código `c` está en `0x692F60 + 64·c`. Cada glifo son **dos teselas de 4bpp** (32 bytes cada una, la de arriba y la de abajo): 8 px de ancho y 16 de alto. Comprobado: espacio (`0x20`) en `0x693760`, `A` (`0x41`) en `0x693FA0`, `a` (`0x61`) en `0x6947A0`, que son justo los bloques que el juego lee al dibujar.
+- Orden de la tabla: los códigos `0x20`..`0x7F` siguen el ASCII (con kana ocupando los signos entre `9` y `A`, como `:`, y otros), y la tabla sigue con kana y símbolos hasta `0xFF` (se lee hasta `0x696F60`). Ningún glifo está en blanco.
+- El juego compone el texto en un búfer de EWRAM (`0x02036AD0`..) y luego lo copia a VRAM (BG0, bloque de caracteres 3, `0xC000`); no escribe los glifos directamente en VRAM. Los colores (tinta 14, fondo 15, 3 para el verde) salen de la paleta.
+- Los anchos no vienen de una tabla (por confirmar): el juego los mide por columnas vacías, así que un glifo dibujado a mano encaja solo.
+- Para los acentos, como en alttp: pisar en memoria (no en el repositorio) los glifos de códigos que el inglés no usa con letras construidas a partir de las propias (`a` + marca). Falta elegir los 8-9 códigos libres (hay kana sin uso) y comprobar que un código `>= 0x80` se dibuja como letra en la ruta del inglés.
+
+## Herramienta del motor para repetirlo
+
+`run_headless --romstat DESDE:HASTA` (compilado con `-DRT_ROMSTAT -DROM_SHIFT=6`) cuenta las lecturas de ROM por bloque; con `VTRACE=lo:hi:n` imprime las escrituras de VRAM y con `WTRACE=valor:n` las de RAM (o `FFFFFFFF:n` para el búfer de texto), cada una con las últimas lecturas de ROM (sin el audio, que es `>= 0xA00000`).
+
 ## Lo que falta saber
 
-- **La fuente**: dónde están los glifos y la tabla de anchos, y si hay sitio para `á é í ó ú ñ ¿ ¡` (alttp dibuja los acentos en tiempo de ejecución con las marcas sobre las letras de la propia fuente). El diálogo no está en el bloque de caracteres de BG0 (`BGCNT` 1F0C); está en otra capa o en OBJ.
-- **Anchos**: las líneas del cuadro de diálogo tienen un límite en píxeles; el español es más largo y hay que comprobarlo con la tabla de anchos de la ROM (como `scripts/check_text.py` de alttp-recomp).
+- **Códigos libres** para los acentos y cómo trata el inglés los bytes `>= 0x80`.
+- **Anchos**: confirmar el cálculo por columnas vacías y el límite de línea del cuadro (el español es más largo; hace falta un comprobador como `scripts/check_text.py` de alttp-recomp).
 - **Códigos de control**: qué hace cada uno y sus parámetros (nombre del jugador, colores, pausas, opciones Sí/No, objetos).
 - **Texto fuera de los mensajes**: menús, pantalla de título, nombres de objetos y mapa pueden venir de gráficos o de otras tablas.
-- **Volumen**: 3699 mensajes. Hay que traducirlos por grupos, empezando por lo que se ve primero (menú de archivo, inicio, primeras zonas).
+- **Gancho del motor**: `gba-recomp` aún no deja que un juego añada C propio ni parchee la ROM en memoria; hay que añadirlo de forma general (el perfil enlaza `games/<id>/*.c` y el runtime llama a `game_init`).
+- **Volumen**: 3699 mensajes, a traducir por grupos empezando por lo que se ve primero.
