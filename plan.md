@@ -16,9 +16,11 @@ El plan completo del motor (analizador, generación de C, runtime, herramientas 
 Meta: descomprimir, doble clic, elegir la ROM una vez y **Jugar**. Se hace en el motor (`..\gba-recomp`), copiando el diseño de `..\snes-recomp` (`port.rs`, `launcher.rs`, `launcher_win.rs`, `update.rs`).
 - [x] `gba-port <rom.gba>` (2026-11-15, consola): identifica la ROM por CRC32 con `games\*.toml`, genera el C, compila con TinyCC + runtime + SDL2 (2,7 s), caché por juego/CRC/versión, recuerda la última ROM. Prueba: `GBA_PORT_CACHE=<dir> gba-port roms\minishcap_usa.gba [--no-launch]`.
 - [x] Ventana de Windows (2026-11-15; `launcher.rs` y `launcher_win.rs` del motor): elegir ROM, Jugar, progreso, errores con «Copiar detalle», es/en según Windows, subsistema `windows` con consola enganchada. Probada: sin argumentos abre la ventana; soltar una ROM construye, oculta la ventana y abre el juego; un fichero que no es ROM muestra el error. Falta probar a mano el diálogo de elegir ROM y la pantalla «Jugar» con ROM recordada; sin icono todavía.
-- [ ] Partidas en `saves\` junto al exe (hoy `play` escribe `<rom>.sav` junto a la ROM).
-- [ ] Paquete: `scripts\release.ps1` (motor + `games\` + TinyCC + SDL2, sin ROM ni C generado) y `scripts\update-engine.ps1`.
-- [ ] Aviso de versión nueva, icono, README del juego (es/en), `scripts\check.ps1`.
+- [x] Partidas y estados en `saves\` junto a `games\` (`play --saves DIR`; copia una vez el `.sav` que hubiera junto a la ROM). El título de la ventana del juego es el del perfil.
+- [x] Diseño del lanzador (2026-11-15), al estilo de alttp-recomp: tema por juego en `[launcher]` del perfil (nombre, colores, icono), marco dorado con rombos, emblema de gorro verde (`scripts\make_icon.py`, arte propio), botones redondeados, errores en rojo.
+- [x] Paquete: `scripts\release.ps1` (gba-port.exe, gba-recomp.exe, runtime, SDL2, TinyCC y `games\`; guarda contra ROM, `.sav` y C generado). Probado el zip (4,1 MiB) en una carpeta limpia: construye en 2,8 s con su TinyCC, abre el juego y guarda en `saves\`. SDL2 y TinyCC salen de un repositorio hermano (alttp-recomp) o de `-Sdl2`/`-Tcc`. Falta probarlo en un Windows sin herramientas de desarrollo.
+- [x] README del juego (es/en).
+- [ ] Aviso de versión nueva (`update.rs` de snes-recomp), icono del `.exe` (recurso con `build.rs`), `scripts\check.ps1`, release en GitHub y página de descargas.
 
 ## Ideas (cuando ya se juegue)
 
