@@ -5,7 +5,7 @@
 ## Estructura
 
 - `roms\minishcap_usa.gba`: la ROM del usuario (en `.gitignore`).
-- `games\minishcap_usa	ext.c`: C propio (traducción: reconstruye el banco de mensajes en memoria con `lang\es.txt`; `--language dump` vuelca el inglés de la ROM del usuario a `lang\en.dump.txt`, ignorado por git). Ver `docs	exto.md`.
+- `games\minishcap_usa\text.c`: C propio (traducción: reconstruye el banco de mensajes en memoria con `lang\es.txt`; `--language dump` vuelca el inglés de la ROM del usuario a `lang\en.dump.txt`, ignorado por git). Ver `docs\texto.md`.
 - `games\`: perfil (direcciones, nombres, tamaños; ningún byte del juego) y C propio (perfil, `lang\`, `text.c`).
 - `scripts\`: comprobaciones y empaquetado (por hacer).
 - `docs\`: notas.
