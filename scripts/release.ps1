@@ -5,7 +5,7 @@
 #
 #   powershell -File scripts\release.ps1 [-Engine ..\gba-recomp] [-Sdl2 <carpeta con include\ y lib\x64>] [-Tcc <carpeta de TinyCC>] [-Version 0.1.0]
 #
-# Compila antes el motor (cargo build --release en -Engine). Sin -Sdl2 / -Tcc busca sdl2\ y toolchain\tcc\ en un
+# Compila el motor (cargo build --release en -Engine; hace falta Rust) con el icono del juego. Sin -Sdl2 / -Tcc busca sdl2\ y toolchain\tcc\ en un
 # repositorio hermano (alttp-recomp), que son los mismos que usa el motor de SNES.
 param(
     [string]$Engine = "",
@@ -19,8 +19,25 @@ Set-Location $root
 if ($Engine -eq "") { $Engine = Join-Path (Split-Path -Parent $root) "gba-recomp" }
 $Engine = (Resolve-Path $Engine).Path
 
-foreach ($f in "target\release\gba-port.exe", "target\release\gba-recomp.exe", "runtime\gba_rt.h", "LICENSE") {
-    if (-not (Test-Path (Join-Path $Engine $f))) { throw "al motor le falta $f (cargo build --release en $Engine)" }
+foreach ($f in "Cargo.toml", "runtime\gba_rt.h", "LICENSE") {
+    if (-not (Test-Path (Join-Path $Engine $f))) { throw "al motor le falta $f ($Engine no es gba-recomp)" }
+}
+# los exe del paquete se compilan aqui con el icono del juego (GBA_PORT_ICON), en un directorio aparte (out\engine-target)
+# para no tocar el target\ del motor
+$icon = Join-Path $root "games\minishcap_usa\icon.ico"
+if (-not (Test-Path $icon)) { throw "falta $icon (python scripts\make_icon.py)" }
+$env:GBA_PORT_ICON = $icon
+$target = Join-Path $root "out\engine-target"
+Push-Location $Engine
+try {
+    cargo build --release --target-dir $target
+    if ($LASTEXITCODE -ne 0) { throw "cargo build fallo" }
+} finally {
+    Pop-Location
+    Remove-Item Env:GBA_PORT_ICON
+}
+foreach ($f in "gba-port.exe", "gba-recomp.exe") {
+    if (-not (Test-Path "$target\release\$f")) { throw "no se compilo $f" }
 }
 function Find-Sibling($rel) {
     foreach ($d in Get-ChildItem (Split-Path -Parent $root) -Directory) {
@@ -39,7 +56,7 @@ $stage = Join-Path $root "out\release\$name"
 if (Test-Path $stage) { Remove-Item -Recurse -Force $stage }
 New-Item -ItemType Directory -Force $stage | Out-Null
 
-Copy-Item "$Engine\target\release\gba-port.exe", "$Engine\target\release\gba-recomp.exe" $stage
+Copy-Item "$target\release\gba-port.exe", "$target\release\gba-recomp.exe" $stage
 Copy-Item "$Engine\runtime" $stage -Recurse
 Copy-Item "$Engine\LICENSE" "$stage\LICENSE-engine"
 Copy-Item $Sdl2 "$stage\sdl2" -Recurse
