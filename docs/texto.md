@@ -36,8 +36,7 @@ Nada de esto se guarda en el repositorio salvo `es.txt`. Un volcado del inglés 
 
 - El motor compila `games/<id>/*.c` con `-DRT_GAME` y el runtime llama a `game_init(rom, len, carpeta, idioma)` tras cargar la ROM en memoria (`--game-dir` y `--language`; `gba-port` los pasa, con `GBA_PORT_LANGUAGE=es` por ahora).
 - `--language dump` escribe el inglés de la ROM del usuario en `games/minishcap_usa/lang/en.dump.txt` (ignorado por git) en el formato de `es.txt` y termina. Es la base para traducir y no se sube.
-- `--language es` lee `lang/es.txt` (`@GRUPO:MENSAJE texto`, `
-` salto de línea, `{06 00}` bytes sueltos, `#` comentarios; UTF-8 con `á é í ó ú ñ ü ¿ ¡` y mayúsculas acentuadas), reconstruye el banco en el hueco libre (`0xE00000`) con el español donde lo haya y el inglés donde no, y redirige los 7 punteros de `0x109214`.
+- `--language es` lee `lang/es.txt` (`@GRUPO:MENSAJE texto`, `\n` salto de línea, `{06 00}` bytes sueltos, `#` comentarios; UTF-8 con `á é í ó ú ñ ü ¿ ¡` y mayúsculas acentuadas), reconstruye el banco en el hueco libre (`0xE00000`) con el español donde lo haya y el inglés donde no, y redirige los 7 punteros de `0x109214`.
 - Los mensajes no se separan por el primer `00` (los códigos de control llevan parámetros `00`): los límites los dan las tablas de desplazamientos.
 
 ## Lo que falta saber
