@@ -1,7 +1,27 @@
 # minishcap-recomp
 
-*The Legend of Zelda: The Minish Cap* (GBA, USA, SHA-1 `b4bd50e4131b027c334547b4524e2dbbd4227130`) recompilado a un port nativo con el motor `gba-recomp` (repositorio hermano `..\gba-recomp`). Este repositorio es **el juego**: su perfil, el C propio que lo mejora y los scripts. El motor es una herramienta externa y compartida.
+*The Legend of Zelda: The Minish Cap* (GBA, USA) running natively on your PC, built from **your own ROM** with the
+[`gba-recomp`](../gba-recomp) engine. This repository is the game: its profile, its launcher look and its scripts. It
+contains no ROM and nothing derived from one. [Versión en español](README.es.md).
 
-**Estado: solo la base.** Ver `plan.md`.
+**Status: early.** The game boots, plays through the intro and the first areas, saves to EEPROM and has sound and save
+states; it has not been played to the end. See `plan.md`.
 
-Hace falta la ROM propia del usuario en `roms\minishcap_usa.gba` (no se sube ni se reparte).
+## Playing (Windows)
+
+1. Unzip the package anywhere.
+2. Double-click `gba-port.exe`, choose your `minishcap_usa.gba` once and press **Play**. The first time the game is
+   prepared on your machine (a few seconds); after that it starts at once. Only the path of the ROM is remembered.
+3. Saves go to `saves\` next to the program.
+
+Dropping the ROM on `gba-port.exe` works too, and from a terminal: `gba-port.exe <rom.gba> [--no-launch]`.
+The ROM must be the USA release (SHA-1 `b4bd50e4131b027c334547b4524e2dbbd4227130`).
+
+Keys: arrows, `X` = A, `Z` = B, `A` = L, `S` = R, `Enter` = Start, `Backspace` = Select, `Tab` (held) = fast forward,
+`F11` = full screen, `F5` / `F8` = save / load state (`1`-`9` pick the slot), `F12` = screenshot, `Esc` = quit.
+Game controllers work too.
+
+## Building the package
+
+`powershell -File scripts\release.ps1` (needs the engine built: `cargo build --release` in `..\gba-recomp`). The
+launcher icon is drawn by `scripts\make_icon.py` (original art, nothing from the game).

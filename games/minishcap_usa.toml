@@ -32,3 +32,14 @@ file = "dynamic_roots.txt"
 # Dónde se toman y cargan los estados guardados: el bucle principal de AgbMain (r4 = r6 = 0x03001000).
 [resume]
 address = "08055EC8"
+
+# El aspecto del lanzador de Windows (gba-port): nombre, colores (#RRGGBB) e icono (relativo a esta carpeta).
+# El icono lo dibuja scripts/make_icon.py: arte propio, nada del juego.
+[launcher]
+name = "Minish Cap Recomp"
+bg = "#0F2A22"
+panel = "#1F4A38"
+gold = "#E8C547"
+ink = "#F3E9C4"
+error = "#3E1A1E"
+icon = "minishcap_usa/icon.ico"
