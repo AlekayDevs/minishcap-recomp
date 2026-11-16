@@ -26,17 +26,24 @@ Nada de esto se guarda en el repositorio salvo `es.txt`. Un volcado del inglés 
 - Orden de la tabla: los códigos `0x20`..`0x7F` siguen el ASCII (con kana ocupando los signos entre `9` y `A`, como `:`, y otros), y la tabla sigue con kana y símbolos hasta `0xFF` (se lee hasta `0x696F60`). Ningún glifo está en blanco.
 - El juego compone el texto en un búfer de EWRAM (`0x02036AD0`..) y luego lo copia a VRAM (BG0, bloque de caracteres 3, `0xC000`); no escribe los glifos directamente en VRAM. Los colores (tinta 14, fondo 15, 3 para el verde) salen de la paleta.
 - Los anchos no vienen de una tabla (por confirmar): el juego los mide por columnas vacías, así que un glifo dibujado a mano encaja solo.
-- Para los acentos, como en alttp: pisar en memoria (no en el repositorio) los glifos de códigos que el inglés no usa con letras construidas a partir de las propias (`a` + marca). Falta elegir los 8-9 códigos libres (hay kana sin uso) y comprobar que un código `>= 0x80` se dibuja como letra en la ruta del inglés.
+- **Los acentos ya están en la ROM USA**: los códigos `>= 0x80` leen sus glifos de una segunda tabla (`0x697CE0 + 64·(código − 0x90)`) con la disposición de Latin-1: `À`…`ß` en `0xC0`–`0xDF`, `à`…`ÿ` en `0xE0`–`0xFF`, y también `¡` (`0xA1`), `¿` (`0xBF`), `ª º « »`. Así que un carácter U+00A0–U+00FF se escribe con el byte de su punto de código; no hay que dibujar nada (comprobado en pantalla en el cuadro de diálogo). El texto del intro (vidrieras) usa otra fuente que no se ha mirado.
 
 ## Herramienta del motor para repetirlo
 
 `run_headless --romstat DESDE:HASTA` (compilado con `-DRT_ROMSTAT -DROM_SHIFT=6`) cuenta las lecturas de ROM por bloque; con `VTRACE=lo:hi:n` imprime las escrituras de VRAM y con `WTRACE=valor:n` las de RAM (o `FFFFFFFF:n` para el búfer de texto), cada una con las últimas lecturas de ROM (sin el audio, que es `>= 0xA00000`).
 
+## Cómo se aplica (`games/minishcap_usa/text.c`, hecho)
+
+- El motor compila `games/<id>/*.c` con `-DRT_GAME` y el runtime llama a `game_init(rom, len, carpeta, idioma)` tras cargar la ROM en memoria (`--game-dir` y `--language`; `gba-port` los pasa, con `GBA_PORT_LANGUAGE=es` por ahora).
+- `--language dump` escribe el inglés de la ROM del usuario en `games/minishcap_usa/lang/en.dump.txt` (ignorado por git) en el formato de `es.txt` y termina. Es la base para traducir y no se sube.
+- `--language es` lee `lang/es.txt` (`@GRUPO:MENSAJE texto`, `
+` salto de línea, `{06 00}` bytes sueltos, `#` comentarios; UTF-8 con `á é í ó ú ñ ü ¿ ¡` y mayúsculas acentuadas), reconstruye el banco en el hueco libre (`0xE00000`) con el español donde lo haya y el inglés donde no, y redirige los 7 punteros de `0x109214`.
+- Los mensajes no se separan por el primer `00` (los códigos de control llevan parámetros `00`): los límites los dan las tablas de desplazamientos.
+
 ## Lo que falta saber
 
-- **Códigos libres** para los acentos y cómo trata el inglés los bytes `>= 0x80`.
-- **Anchos**: confirmar el cálculo por columnas vacías y el límite de línea del cuadro (el español es más largo; hace falta un comprobador como `scripts/check_text.py` de alttp-recomp).
-- **Códigos de control**: qué hace cada uno y sus parámetros (nombre del jugador, colores, pausas, opciones Sí/No, objetos).
-- **Texto fuera de los mensajes**: menús, pantalla de título, nombres de objetos y mapa pueden venir de gráficos o de otras tablas.
-- **Gancho del motor**: `gba-recomp` aún no deja que un juego añada C propio ni parchee la ROM en memoria; hay que añadirlo de forma general (el perfil enlaza `games/<id>/*.c` y el runtime llama a `game_init`).
+- **Anchos y líneas**: el cuadro del diálogo tiene dos líneas visibles y el ancho está limitado (el español es más largo); hace falta un comprobador (como `scripts/check_text.py` de alttp-recomp) con los anchos de la fuente. Los anchos de los glifos parecen medirse en ejecución.
+- **Códigos de control**: qué hace cada uno y sus parámetros (nombre del jugador `{06 00}`, colores `{02 02}`/`{02 00}`, pausas, opciones, objetos).
+- **Texto fuera de los mensajes**: menús, pantalla de título, nombres de objetos, vidrieras del intro (otra fuente) y mapa pueden venir de gráficos o de otras tablas.
+- **Selector de idioma** en el lanzador (por ahora `GBA_PORT_LANGUAGE=es`).
 - **Volumen**: 3699 mensajes, a traducir por grupos empezando por lo que se ve primero.

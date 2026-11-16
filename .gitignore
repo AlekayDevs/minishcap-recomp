@@ -8,3 +8,6 @@
 /target/
 *.log
 saves/
+
+# volcado del texto en inglés de la ROM del usuario (deriva de la ROM)
+games/*/lang/*.dump.txt
