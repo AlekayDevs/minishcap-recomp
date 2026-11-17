@@ -19,7 +19,7 @@ La ROM debe ser la versión USA (SHA-1 `b4bd50e4131b027c334547b4524e2dbbd4227130
 
 Teclas: flechas, `X` = A, `Z` = B, `A` = L, `S` = R, `Enter` = Start, `Retroceso` = Select, `Tab` (mantenida) = avance
 rápido, `F11` = pantalla completa, `F5` / `F8` = guardar / cargar estado (`1`-`9` eligen la ranura), `F12` = captura,
-`Esc` = salir. También funciona un mando.
+`F1` / `Esc` = menú (idioma, vídeo, sonido, cambiar teclas y mando, ranuras de estado, rebobinado y los extras del juego: texto rápido, transiciones rápidas), `R` (mantenida) = rebobinar. También funciona un mando.
 
 ## Armar el paquete
 

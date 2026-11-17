@@ -18,7 +18,7 @@ Dropping the ROM on `gba-port.exe` works too, and from a terminal: `gba-port.exe
 The ROM must be the USA release (SHA-1 `b4bd50e4131b027c334547b4524e2dbbd4227130`).
 
 Keys: arrows, `X` = A, `Z` = B, `A` = L, `S` = R, `Enter` = Start, `Backspace` = Select, `Tab` (held) = fast forward,
-`F11` = full screen, `F5` / `F8` = save / load state (`1`-`9` pick the slot), `F12` = screenshot, `Esc` = quit.
+`F11` = full screen, `F5` / `F8` = save / load state (`1`-`9` pick the slot), `F12` = screenshot, `F1` / `Esc` = menu (language, video, sound, key and pad rebinding, save-state slots, rewind and the game's extras: fast text, fast transitions), `R` (held) = rewind.
 Game controllers work too.
 
 ## Building the package
