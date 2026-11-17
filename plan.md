@@ -33,6 +33,13 @@ Meta: descomprimir, doble clic, elegir la ROM una vez y **Jugar**. Se hace en el
   - Web de descarga en GitHub Pages (como alekaydevs.github.io/alttp-recomp).
   - Cuando todo esté: release `v0.1.0` con los tres paquetes (el zip de Windows acaba en `-win64.zip`) y `SHA256SUMS`.
 
+## Opciones del juego (menú F1, categoría Extras)
+
+Mecanismo en el motor (`docs/opciones-del-juego.md`); aquí, `games/minishcap_usa/options.c`. Las direcciones salen de `zeldaret/tmc` (`linker.ld`, solo como referencia) y se comprueban contra la ROM antes de usarlas.
+
+- [x] **Texto rápido** (`fast_text`: No / Con B / Siempre; 2026-11-17). `gTextRender` (EWRAM `0x02022780`): `delay` `+0x95`, `newlineDelay` `+0x8A`, `typeSpeed` `+0x92`, `msgStatus` `+0x88`, `renderStatus` `+0x89`. Salta las pausas y pone `typeSpeed` a −40 mientras se escribe un mensaje (`msgStatus == 2` y `renderStatus == 1`). Sin esa condición la pantalla de nombre se cuelga (usa la misma estructura). Comprobado con la partida nueva: a los 43 fotogramas de empezar un diálogo, normal «Good mornin», «Siempre» la frase entera, y «Con B» la frase entera con B mantenida. No cambia la dificultad. Falta jugar a mano.
+- [ ] **Candidatas** (ninguna hecha): fundidos y transiciones más rápidos (riesgo medio); arreglos de fallos del original, uno a uno (necesitan ganchos dentro de funciones); pantalla ancha (experimento aparte, riesgo alto). **Cambios que alterarían la dificultad (cartera, flechas y bombas más grandes, vida, etc.): no se hacen sin que el dueño los acepte antes.**
+
 ## Ideas (cuando ya se juegue)
 
 Las mismas mejoras de calidad de vida que en alttp-recomp, apagadas por defecto y sin romper la dificultad; pantalla ancha; traducción al español del texto (propio, nunca copia del volcado de la ROM).
