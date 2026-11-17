@@ -35,3 +35,5 @@ Download `minishcap-recomp-<version>-linux-x86_64.tar.gz`, extract it, and run:
 ```
 
 The first run translates and compiles the game from your ROM (a couple of seconds) and caches it in `~/.cache/gba-port`; saves go to `saves/` next to `games/`. You need the C library development files to link it (`build-essential` or `libc6-dev`). There is no ROM-picker window on Linux yet. The ROM is never included in the package.
+
+See [docs/DESARROLLO.md](docs/DESARROLLO.md) (Spanish) for building from source, testing and packaging, and [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -53,5 +53,6 @@ Las mismas mejoras de calidad de vida que en alttp-recomp, apagadas por defecto 
 - Guardado EEPROM del juego (512 B u 8 KiB: comprobarlo con los accesos DMA del juego).
 - Otras regiones (EU, JP) más adelante; la ROM de esta carpeta es la USA (SHA-1 `b4bd50e4...`, CRC32 `ABCEBBB1`).
 - Mejoras de calidad de vida (solo ahorran pasos, apagadas por defecto), pantalla ancha, traducción propia al español del texto (nunca copia del volcado de la ROM), menú del port con estilo propio.
-- `scripts\check.ps1` y `scripts\check.sh`; `scripts\release.ps1` y `scripts\update-engine.ps1` como en alttp-recomp.
-- README del juego con cómo poner la ROM y cómo jugar.
+- ~~`scripts\check.sh`~~ hecho (2026-11-17; probado en WSL con la ROM: pasa de punta a punta). `update-engine.ps1` **no hace falta**: aquí el motor no se sube compilado a la raíz, el paquete lo construye `release.ps1`/`release.sh` en cada release.
+- ~~Documentación~~ hecha: `docs/DESARROLLO.md`, `CONTRIBUTING.md`, `SECURITY.md`. Falta un `AGENTS.md` (alttp lo tiene; aquí está `CLAUDE.md`).
+- README del juego con cómo poner la ROM y cómo jugar (hecho).
