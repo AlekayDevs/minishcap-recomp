@@ -41,8 +41,7 @@ static void fast_fades(void) {
 #ifdef OPT_DEBUG
     static int was, len;
     if (rt_iwram[FADE_CONTROL + FC_ACTIVE]) len++;
-    if (was && !rt_iwram[FADE_CONTROL + FC_ACTIVE]) { fprintf(stderr, "fade ended at frame %u after %d frames
-", sys_frames, len); len = 0; }
+    if (was && !rt_iwram[FADE_CONTROL + FC_ACTIVE]) { fprintf(stderr, "fade ended at frame %u after %d frames\n", sys_frames, len); len = 0; }
     was = rt_iwram[FADE_CONTROL + FC_ACTIVE];
 #endif
     if (times == 1 || !rt_iwram[FADE_CONTROL + FC_ACTIVE]) return;

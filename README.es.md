@@ -25,3 +25,13 @@ rápido, `F11` = pantalla completa, `F5` / `F8` = guardar / cargar estado (`1`-`
 
 `powershell -File scripts\release.ps1` (hace falta el motor compilado: `cargo build --release` en `..\gba-recomp`). El
 icono del lanzador lo dibuja `scripts\make_icon.py` (arte propio, nada del juego).
+
+## Linux
+
+Descarga `minishcap-recomp-<versión>-linux-x86_64.tar.gz`, descomprímelo y ejecuta:
+
+```
+./gba-port /ruta/a/tu/rom.gba
+```
+
+La primera vez traduce y compila el juego desde tu ROM (un par de segundos) y lo guarda en `~/.cache/gba-port`; las partidas van a `saves/`, junto a `games/`. Para enlazarlo hacen falta los ficheros de desarrollo de la libc (`build-essential` o `libc6-dev`). Todavía no hay ventana para elegir la ROM en Linux. El paquete nunca lleva la ROM.

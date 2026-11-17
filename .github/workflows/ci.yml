@@ -1,0 +1,45 @@
+# Integración continua. No hay ROM en CI (nunca se sube), así que aquí solo van las comprobaciones que no la necesitan:
+# que no haya nada derivado de la ROM en git, que el perfil sea TOML válido y que el C propio compile contra el runtime del motor.
+# Las pruebas con la ROM (scripts/check.ps1) y `tools/scan.py` del motor se ejecutan en local.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Motor (gba-recomp, para el runtime y scan.py)
+        uses: actions/checkout@v4
+        with:
+          repository: AlekayDevs/gba-recomp
+          path: gba-recomp
+
+      - name: Nada derivado de la ROM en git
+        run: |
+          prohibidos=$(git ls-files | grep -Ei '\.(gba|sav|srm|sst|thumb)$|^(roms|out|saves)/|\.dump\.txt$' || true)
+          if [ -n "$prohibidos" ]; then echo "Ficheros que no deben estar en git:"; echo "$prohibidos"; exit 1; fi
+
+      - name: Huellas de la ROM en el historial (scan.py del motor)
+        run: |
+          # sin ROM que comparar solo busca ficheros y tablas de texto; con ROM (en local) compara además sus huellas
+          git fetch --unshallow || true
+          python3 -I gba-recomp/tools/scan.py --history
+
+      - name: El perfil es TOML válido
+        run: python3 -c "import tomllib; tomllib.load(open('games/minishcap_usa.toml','rb'))"
+
+      - name: Cada raíz dinámica tiene formato de dirección
+        run: |
+          grep -vE '^\s*(#|$)' games/dynamic_roots.txt | grep -vE '^[0-9A-Fa-f]{8}$' && { echo "línea mal formada en games/dynamic_roots.txt"; exit 1; } || true
+
+      - name: El C propio compila contra el runtime del motor
+        run: |
+          for f in games/minishcap_usa/*.c; do
+            gcc -std=gnu11 -Wall -Wno-comment -Werror -fsyntax-only \
+                -Igba-recomp/runtime -DRT_GAME -DRT_GAME_OPTS "$f"
+          done

@@ -25,3 +25,13 @@ Game controllers work too.
 
 `powershell -File scripts\release.ps1` (needs the engine built: `cargo build --release` in `..\gba-recomp`). The
 launcher icon is drawn by `scripts\make_icon.py` (original art, nothing from the game).
+
+## Linux
+
+Download `minishcap-recomp-<version>-linux-x86_64.tar.gz`, extract it, and run:
+
+```
+./gba-port /path/to/your/rom.gba
+```
+
+The first run translates and compiles the game from your ROM (a couple of seconds) and caches it in `~/.cache/gba-port`; saves go to `saves/` next to `games/`. You need the C library development files to link it (`build-essential` or `libc6-dev`). There is no ROM-picker window on Linux yet. The ROM is never included in the package.
