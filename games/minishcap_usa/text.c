@@ -190,8 +190,10 @@ static int dump_english(const uint8_t *rom, const char *path) {
     return 1;
 }
 
+extern int gfx_es;
 void game_init(uint8_t *rom, u32 len, const char *game_dir, const char *language) {
     int es = !strcmp(language, "es"), dump = !strcmp(language, "dump");
+    gfx_es = es;
     if (!es && !dump) return;
     if (!read_bank(rom, len)) { fprintf(stderr, "text: the message bank is not where it should be (is this the USA ROM?)\n"); return; }
     char path[1024];

@@ -53,7 +53,9 @@ static void fast_fades(void) {
     rt_iwram[FADE_CONTROL + FC_PROGRESS + 1] = (unsigned char)(progress >> 8);
 }
 
+extern void gfx_frame(void);
 void game_frame(void) {
+    gfx_frame();
     fast_fades();
     int mode = rt_opt("fast_text");
     if (mode == 0 || (mode == 1 && !(sys_keys & 2))) return;
