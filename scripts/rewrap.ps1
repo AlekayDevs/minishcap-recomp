@@ -1,5 +1,5 @@
 # Reajusta las líneas de es.txt que pasan de $Max caracteres visibles (corta en el último espacio y pasa el resto a la línea siguiente).
-# Salta los grupos 1 y 3 (créditos y boletín, pantallas propias). Uso: powershell -File scripts\rewrap.ps1 [-Max 42]
+# Salta los grupos 1, 3 y 15 (créditos, boletín e introducción, pantallas propias). Uso: powershell -File scripts\rewrap.ps1 [-Max 42]
 param([int]$Max = 42)
 $p = Join-Path $PSScriptRoot '..\games\minishcap_usa\lang\es.txt'
 $raw = [IO.File]::ReadAllText($p, [Text.Encoding]::UTF8)
@@ -8,7 +8,7 @@ $lines = $raw -split "`r?`n"
 function Vis($s) { [regex]::Replace($s, '\{[0-9A-Fa-f ]+\}', '').Length }
 $out = New-Object System.Collections.Generic.List[string]
 foreach ($l in $lines) {
-  if (-not ($l -match '^@(\d+):\d+ ') -or $Matches[1] -eq '1' -or $Matches[1] -eq '3') { $out.Add($l); continue }
+  if (-not ($l -match '^@(\d+):\d+ ') -or $Matches[1] -eq '1' -or $Matches[1] -eq '3' -or $Matches[1] -eq '15') { $out.Add($l); continue }
   $i = $l.IndexOf(' '); $head = $l.Substring(0, $i); $body = $l.Substring($i + 1)
   $parts = New-Object System.Collections.ArrayList
   [void]$parts.AddRange(@($body -split '\n'))

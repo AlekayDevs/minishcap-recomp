@@ -102,12 +102,12 @@ static const char *font5(char c) {
     return NULL;
 }
 
-#define BW 104
-/* Lienzo de BWx16 con los índices de la paleta 7: fondo 5, fondo oscuro 6, anillos c y e (blanco) y relleno 7. */
-static void draw_banner(unsigned char px[16][BW], const char *text) {
+#define BW 160
+/* Lienzo de hasta BWx16: paleta azul 7 o aviso rojo 6; fondo 5, anillos c/e y relleno 7. */
+static void draw_banner(unsigned char px[16][BW], const char *text, int width) {
     static unsigned char fill[16][BW];
     memset(fill, 0, sizeof fill); memset(px, 5, 16 * BW);
-    int n = (int)strlen(text), x0 = (BW - (n * 8 - 2)) / 2 - 1;
+    int n = (int)strlen(text), x0 = (width - (n * 8 - 2)) / 2 - 1;
     for (int i = 0; i < n; i++) {
         const char *g = font5(text[i]);
         if (!g) continue;
@@ -115,14 +115,14 @@ static void draw_banner(unsigned char px[16][BW], const char *text) {
             if (g[r * 6 + c] == '1')
                 for (int dy = 0; dy < 2; dy++) for (int dx = 0; dx < 2; dx++) {
                     int x = x0 + i * 8 + c + dx, y = 3 + r + dy;
-                    if (x >= 0 && x < BW && y < 16) fill[y][x] = 1;
+                    if (x >= 0 && x < width && y < 16) fill[y][x] = 1;
                 }
     }
-    for (int y = 0; y < 16; y++) for (int x = 0; x < BW; x++) {
+    for (int y = 0; y < 16; y++) for (int x = 0; x < width; x++) {
         int d = 9;
         for (int dy = -3; dy <= 3; dy++) for (int dx = -3; dx <= 3; dx++) {
             int yy = y + dy, xx = x + dx;
-            if (yy < 0 || yy >= 16 || xx < 0 || xx >= BW || !fill[yy][xx]) continue;
+            if (yy < 0 || yy >= 16 || xx < 0 || xx >= width || !fill[yy][xx]) continue;
             int m = (dx < 0 ? -dx : dx) > (dy < 0 ? -dy : dy) ? (dx < 0 ? -dx : dx) : (dy < 0 ? -dy : dy);
             if (m < d) d = m;
         }
@@ -136,22 +136,23 @@ static unsigned crc32_of(const unsigned char *p, int n) {
     return ~c;
 }
 
-/* Las 26 teselas del texto empiezan en 'tile' (sprites en tile, +8, +16 y +24 de 32x16, 32x16, 32x16 y 8x16). */
-static void banner(const char *text, unsigned crc_en) {
+/* Cabeceras de 104 o 160 píxeles: sprites contiguos de 32x16 y, si hace falta, uno final de 8x16. */
+static void banner(const char *text, unsigned crc_en, int width, int palette) {
     int tile = -1;
     for (int i = 0; i < 128 && tile < 0; i++) {
         const unsigned char *o = rt_oam + i * 8;
         unsigned a0 = o[0] | o[1] << 8, a1 = o[2] | o[3] << 8, a2 = o[4] | o[5] << 8;
-        if (a0 == 0x4000 && (a1 & 0x1FF) == 32 && (a2 >> 12) == 7 && (a1 >> 14) == 2) tile = a2 & 0x3FF;
+        if (a0 == 0x4000 && (a1 & 0x1FF) == 32 && (a2 >> 12) == (unsigned)palette && (a1 >> 14) == 2) tile = a2 & 0x3FF;
     }
-    if (tile < 0 || tile > 1024 - 26 || crc32_of(rt_vram + 0x10000 + tile * 32, 26 * 32) != crc_en) return;
+    int tiles = width / 4;
+    if (tile < 0 || tile > 1024 - tiles || crc32_of(rt_vram + 0x10000 + tile * 32, tiles * 32) != crc_en) return;
     static unsigned char px[16][BW];
-    draw_banner(px, text);
+    draw_banner(px, text, width);
     unsigned char *dst = rt_vram + 0x10000 + tile * 32;
-    for (int s = 0; s < 4; s++) {
-        int tiles_w = s < 3 ? 4 : 1;
+    for (int s = 0; s * 32 < width; s++) {
+        int tiles_w = width - s * 32 >= 32 ? 4 : (width - s * 32) / 8;
         for (int ty = 0; ty < 2; ty++) for (int tx = 0; tx < tiles_w; tx++) {
-            int t = s < 3 ? s * 8 + ty * 4 + tx : 24 + ty;
+            int t = s * 8 + ty * tiles_w + tx;
             for (int r = 0; r < 8; r++) for (int c = 0; c < 8; c += 2) {
                 int y = ty * 8 + r, x = s * 32 + tx * 8 + c;
                 dst[t * 32 + r * 4 + c / 2] = (unsigned char)(px[y][x] | px[y][x + 1] << 4);
@@ -160,9 +161,62 @@ static void banner(const char *text, unsigned crc_en) {
     }
 }
 
+/* Rótulos de 40/48x16: sprite de 32x16 seguido de uno de 8/16x16.
+   Se comprueban tanto la OAM como el CRC antes de escribir; el dibujo es propio y conserva la paleta de selección. */
+static void menu_label(int tile, int width, unsigned crc_en, const char *text, int style) {
+    int seen = 0, tiles = width / 4;
+    for (int i = 0; i < 128; i++) {
+        const unsigned char *o = rt_oam + i * 8;
+        unsigned a0 = o[0] | o[1] << 8, a1 = o[2] | o[3] << 8, a2 = o[4] | o[5] << 8;
+        if ((a0 & 0xC300) == 0x4000 && (a1 >> 14) == 2 && (a2 & 0x3FF) == (unsigned)tile) seen = 1;
+    }
+    unsigned char *dst = rt_vram + 0x10000 + tile * 32;
+    if (!seen || tile < 0 || tile + tiles > 1024 || crc32_of(dst, tiles * 32) != crc_en) return;
+    unsigned char px[16][48] = {{0}}, ink[16][48] = {{0}};
+    if (style == 1) { /* FIN: botón propio; la paleta cambia al seleccionarlo. */
+        for (int y = 1; y < 15; y++) for (int x = 1; x < width - 1; x++) {
+            if ((x == 1 || x == width - 2) && (y == 1 || y == 14)) continue;
+            px[y][x] = y == 1 || y == 14 || x == 1 || x == width - 2 ? 7 :
+                           y == 2 || x == 2 ? 14 : 10;
+        }
+    }
+    int n = (int)strlen(text), x0 = (width - (n * 6 - 1)) / 2, y0 = style == 2 ? 1 : 4;
+    for (int i = 0; i < n; i++) {
+        const char *g = font5(text[i]);
+        if (!g) continue;
+        for (int y = 0; y < 7; y++) for (int x = 0; x < 5; x++) if (g[y * 6 + x] == '1') {
+            int xx = x0 + i * 6 + x, yy = y0 + y;
+            if (xx < 0 || xx >= width) continue;
+            ink[yy][xx] = 1;
+            if (style == 0) ink[yy + 1][xx] = 1;
+        }
+    }
+    if (style == 2) { /* OPCIONES: letras blancas con contorno negro sobre el fondo. */
+        for (int y = 0; y < 16; y++) for (int x = 0; x < width; x++) if (ink[y][x])
+            for (int dy = -1; dy <= 1; dy++) for (int dx = -1; dx <= 1; dx++)
+                if (x + dx >= 0 && x + dx < width && y + dy >= 0 && y + dy < 16) px[y + dy][x + dx] = 15;
+    } else if (style == 0) {
+        for (int y = 0; y < 15; y++) for (int x = 0; x < width - 1; x++) if (ink[y][x]) px[y + 1][x + 1] = 12;
+    }
+    for (int y = 0; y < 16; y++) for (int x = 0; x < width; x++) if (ink[y][x]) px[y][x] = style == 1 ? 7 : 14;
+    for (int y = 0; y < 16; y++) for (int x = 0; x < width; x += 2) {
+        int t = x < 32 ? (y / 8) * 4 + x / 8 : 8 + (y / 8) * ((width - 32) / 8) + (x - 32) / 8;
+        dst[t * 32 + (y % 8) * 4 + (x % 8) / 2] = px[y][x] | px[y][x + 1] << 4;
+    }
+}
+
 void gfx_frame(void) {
     if (!gfx_es) return;
     title_press_start();
-    banner("ELIGE ARCHIVO", 0xD2B12865u);
-    banner("TU NOMBRE", 0x648BB2C5u);
+    banner("ELIGE ARCHIVO", 0xD2B12865u, 104, 7);
+    banner("TU NOMBRE", 0x648BB2C5u, 104, 7);
+    banner("ELIGE DESTINO", 0xD14F8C40u, 160, 7);
+    banner("CONFIRMAR BORRADO", 0x4C33DF43u, 160, 6);
+    menu_label(270, 48, 0x8AF1BF8Cu, "OPCIONES", 2);
+    menu_label(768, 40, 0xAEA3E515u, "COPIAR", 0);
+    menu_label(790, 40, 0x13BDF516u, "BORRAR", 0);
+    menu_label(800, 40, 0x1E34E143u, "JUGAR", 0);
+    menu_label(747, 40, 0x144EAB32u, "FIN", 1);
+    menu_label(779, 40, 0xB8C70533u, "VOLVER", 0);
+    menu_label(270, 48, 0x76FFA16Cu, "HABLAR", 2);
 }

@@ -53,7 +53,8 @@ scripts/check.sh [--no-build]                      # Linux
 1. Nada de la ROM ni derivados en git ni en su historial (`tools/scan.py` del motor).
 2. El perfil es TOML válido y el C propio compila contra el runtime (`check.sh`; en Windows lo hace la construcción real).
 3. Las pruebas del motor (`cargo test`).
-4. Construcción real desde `roms/minishcap_usa.gba` en una caché nueva (se omite sin ROM).
+4. Pruebas C del runtime: BIOS y estados truncados, sin ROM. Windows busca TinyCC/GCC (`-Cc` permite elegirlo); Linux usa GCC. Se omiten si no hay compilador. Los archivos de prueba quedan en `out/runtime-check/`.
+5. Construcción real desde `roms/minishcap_usa.gba` en una caché nueva (se omite sin ROM).
 
 Para jugar a mano y hallar raíces dinámicas o fallos de la PPU, el motor trae `tools/build_play.sh` y `tools/complete.sh`; añade las direcciones nuevas a `games/dynamic_roots.txt`.
 

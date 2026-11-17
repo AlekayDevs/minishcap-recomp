@@ -3,7 +3,8 @@
 #   1. Nada de la ROM ni derivados en lo que git sigue ni en su historial (tools/scan.py del motor).
 #   2. El C propio de games/ compila contra el runtime del motor y el perfil es TOML válido.
 #   3. Las pruebas del motor (cargo test).
-#   4. Construcción real: gba-port construye el juego desde roms/minishcap_usa.gba y deja el reproductor en una caché nueva
+#   4. Pruebas C de BIOS y estados (si hay gcc).
+#   5. Construcción real: gba-port construye el juego desde roms/minishcap_usa.gba y deja el reproductor en una caché nueva
 #      (sin ROM, sin gcc o con --no-build se omite).
 #
 #   scripts/check.sh [--no-build] [ruta/a/gba-recomp]     (el motor se busca en ../gba-recomp)
@@ -35,6 +36,22 @@ fi
 
 step "pruebas del motor"
 (cd "$engine" && cargo test --release 2>&1 | grep -E "test result|FAILED|error"; exit "${PIPESTATUS[0]}") || fail "cargo test"
+
+step "pruebas C del runtime"
+if command -v gcc >/dev/null 2>&1; then
+    mkdir -p out/runtime-check
+    runtime_sources=()
+    for f in gba_cpu gba_bus gba_sys gba_ppu gba_apu gba_state gba_save gba_bios; do
+        runtime_sources+=("$engine/runtime/$f.c")
+    done
+    for test in bios_test state_test; do
+        if [ ! -f "$engine/runtime/$test.c" ]; then echo "omitido: $test.c no existe en este motor"; continue; fi
+        gcc -I"$engine/runtime" -o "out/runtime-check/$test" "$engine/runtime/$test.c" "${runtime_sources[@]}" -lm || fail "$test: compilación"
+        (cd out/runtime-check && "./$test") || fail "$test"
+    done
+else
+    echo "omitidas: sin gcc"
+fi
 
 rom=roms/minishcap_usa.gba
 if [ "$nobuild" = 1 ] || [ ! -f "$rom" ]; then

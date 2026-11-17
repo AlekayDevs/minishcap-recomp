@@ -4,10 +4,12 @@
 #
 # 1. Nada de la ROM ni derivados en lo que git sigue ni en su historial (tools\scan.py del motor).
 # 2. Las pruebas del motor (cargo test): decodificadores, perfil, lanzador, aviso de version, SHA-256.
-# 3. Construccion real: gba-port construye el juego desde roms\minishcap_usa.gba y el reproductor queda en la cache
+# 3. Pruebas C del runtime (BIOS y estados), si hay TinyCC o GCC.
+# 4. Construccion real: gba-port construye el juego desde roms\minishcap_usa.gba y el reproductor queda en la cache
 #    (sin ROM a mano se omite; -NoBuild la omite siempre). Usa una cache nueva para que se construya de verdad.
 param(
     [string]$Engine = "",
+    [string]$Cc = "",
     [switch]$NoBuild
 )
 $ErrorActionPreference = "Stop"
@@ -33,6 +35,36 @@ Step "pruebas del motor" {
     } finally { Pop-Location }
     $global:LASTEXITCODE = $code
 }
+
+if (-not $Cc) {
+    $candidates = @($env:GBA_PORT_CC, $env:TCC, (Join-Path $root '..\alttp-recomp\toolchain\tcc\tcc.exe'), 'tcc', 'gcc')
+    foreach ($candidate in $candidates) {
+        if (-not $candidate) { continue }
+        if (Test-Path -LiteralPath $candidate -PathType Leaf) { $Cc = (Resolve-Path -LiteralPath $candidate).Path; break }
+        $command = Get-Command $candidate -ErrorAction SilentlyContinue
+        if ($command) { $Cc = $command.Source; break }
+    }
+}
+if ($Cc) {
+    Step "pruebas C del runtime" {
+        $runtimeDir = Join-Path $Engine 'runtime'
+        $testDir = Join-Path $root 'out\runtime-check'
+        New-Item -ItemType Directory -Force -Path $testDir | Out-Null
+        $sources = @('gba_cpu.c','gba_bus.c','gba_sys.c','gba_ppu.c','gba_apu.c','gba_state.c','gba_save.c','gba_bios.c') |
+            ForEach-Object { Join-Path $runtimeDir $_ }
+        foreach ($test in @('bios_test', 'state_test')) {
+            $source = Join-Path $runtimeDir "$test.c"
+            if (-not (Test-Path -LiteralPath $source)) { Write-Host "omitido: $source no existe en este motor"; continue }
+            $program = Join-Path $testDir "$test.exe"
+            & $Cc "-I$runtimeDir" -o $program $source @sources
+            if ($LASTEXITCODE -ne 0) { return }
+            Push-Location $testDir
+            try { & $program; $code = $LASTEXITCODE } finally { Pop-Location }
+            if ($code -ne 0) { $global:LASTEXITCODE = $code; return }
+        }
+        $global:LASTEXITCODE = 0
+    }
+} else { Write-Host '== pruebas C del runtime: omitidas (sin TinyCC/GCC)' }
 
 $rom = Join-Path $root "roms\minishcap_usa.gba"
 if ($NoBuild -or -not (Test-Path $rom)) {

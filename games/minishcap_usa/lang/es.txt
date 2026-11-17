@@ -4,14 +4,14 @@
 # --- Grupo 0: mensajes del sistema (guardado, copia, modo reposo) ---
 @0:3 \nEl archivo {06}{01} tiene datos dañados.
 @0:4 \nNo quedan archivos vacíos.\n
-@0:5 \nCopiando...\nNo toques el Game Pak\nni\napagues la consola.\n
+@0:5 \nCopiando...\nNo toques el Game Pak\nni apagues la consola.\n
 @0:6 \nNo se pudo copiar el archivo.\n
-@0:7 \nBorrando archivo...\nNo toques el Game\nPak\nni apagues la consola.
-@0:8 \nGuardando archivo...\nNo toques el Game\nPak\nni apagues la consola.
+@0:7 \nBorrando archivo...\nNo toques el Game Pak\nni apagues la consola.
+@0:8 \nGuardando archivo...\nNo toques el Game Pak\nni apagues la consola.
 @0:9 \nNo se pudo guardar el archivo.\n
-@0:11 \nGuardando...\n\nNo toques el Game\nPak\nni apagues la consola.\n
+@0:11 \nGuardando...\n\nNo toques el Game Pak\nni apagues la consola.\n
 @0:12 \nNo se guardó correctamente.\n
-@0:13 ¿Activar el modo reposo?\n\n{06}{01} Sí      {06}{02}\nNo\n\nPara salir del modo reposo,\npulsa\nSELECT y los botones L y R a la\nvez.
+@0:13 ¿Activar el modo reposo?\n\n{06}{01} Sí      {06}{02} No\n\nPara salir del modo reposo, pulsa\nSELECT, L y R a la vez.
 @0:16 {06}{01} Guardar\n\n{06}{02} No guardar
 @0:17 {06}{01} Continuar\n\n{06}{02} Salir
 
@@ -95,12 +95,12 @@
 @4:48 Amuleto de Farore
 @4:49 Amuleto de Din
 @4:52 Hoja del Herrero
-@4:53 Espada Picori rota
+@4:53 Espada Minish rota
 @4:54 Botella de comida para perros
 @4:55 Llave del Rancho Lon Lon
 @4:56 Seta despertadora
 @4:57 Libro: Bestiario de Hyrule
-@4:58 Libro: Leyenda de los Picori
+@4:58 Libro: Leyenda de los Minish
 @4:59 Libro: Historia de las Máscaras
 @4:60 Llave del Cementerio
 @4:61 Trofeo de Tingle
@@ -153,7 +153,7 @@
 @4:110 10 flechas
 @4:111 30 flechas
 @4:112 Pergaminos del Tigre
-@4:115 Ir a guardar
+@4:115 Guardar partida
 @4:116 Ir al modo reposo
 @4:117 Ataque Giratorio{02}{01}\n{02}{00}Mantén pulsado el botón\nde la\n{02}{01}espada{02}{00}. ¡Carga y suelta!
 @4:118 Ataque Rodante\nRueda y, al empezar a\nlevantarte,\n¡golpea con la {02}{01}espada{02}{00}!
@@ -177,7 +177,7 @@
 @5:10 ¡Has conseguido la {02}{01}Flecha de Luz{02}{00}!\n¡Ahora\npuedes lanzar flechas de luz\nsagrada!
 @5:11 ¡Has conseguido un {02}{01}bumerán{02}{00}! ¡Esta\narma\ntan fina vuelve al lanzarla!
 @5:12 ¡Has conseguido el {02}{01}Bumerán\nMágico{02}{00}!\n\nMantén pulsado el botón con el\nque lo\nlanzaste y usa {0C}{08} para dirigirlo.
-@5:13 {04}{10}{00}¡La princesa Zelda te ha dado un\n{02}{01}escudo\npequeño{02}{00}!\n\nMantén el botón para\nprotegerte.\n\n...Aunque es un poco\nvergonzoso.\n¡Es tan pequeñito!
+@5:13 {04}{10}{00}¡La princesa Zelda te ha dado un\n{02}{01}escudo pequeño{02}{00}!\n\nMantén pulsado su botón para\nprotegerte.\n\n...Aunque da un poco de vergüenza.\n¡Es tan pequeñito!
 @5:14 {04}{10}{00}¡Has conseguido el {02}{01}Escudo\nEspejo{02}{00}!\n\nBrilla como un espejo. ¡Úsalo\npara\nreflejar los ataques enemigos!
 @5:15 ¡Has conseguido la {02}{01}Linterna de\nFuego{02}{00}!\n\n¡Ilumina la noche! Pulsa el\nbotón\npara encenderla o apagarla.
 @5:16 Linterna de Fuego (encendida)\n\nEn la\npantalla de objetos, equípala en\n{0C}{00} o {0C}{01} para\nusarla.
@@ -212,12 +212,12 @@
 @5:48 {04}{10}{0E}¡Has conseguido el {02}{01}Amuleto de Farore{02}{00}!\n¡Tu\nfuerza y tu defensa aumentarán\nun tiempo!
 @5:49 {04}{10}{0E}¡Has conseguido el {02}{01}Amuleto de Din{02}{00}!\n¡Tu\nfuerza aumentará un tiempo!
 @5:52 {04}{10}{0E}¡Has aceptado la {02}{01}Espada del\nHerrero{02}{00}!\n\n¡Cuidado, no pierdas este\nencargo tan\nimportante!
-@5:53 {04}{10}{0C}¡Has aceptado la {02}{01}hoja Picori rota{02}{00}!\n\nEs\nparte de la espada necesaria\npara\nreforjar la espada sagrada. ¡No\nla\npierdas!
+@5:53 {04}{10}{0C}¡Has aceptado la {02}{01}hoja Minish rota{02}{00}!\n\nEs\nparte de la espada necesaria\npara\nreforjar la espada sagrada. ¡No\nla\npierdas!
 @5:54 {04}{10}{0E}¡Has conseguido {02}{01}una botella de\ncomida\npara perros{02}{00}! ¡Ahora ve a hacer el\nrecado!
 @5:55 {04}{10}{0E}¡Has conseguido la {02}{01}llave del Rancho\nLon\nLon{02}{00}! ¡Ya puedes abrir la puerta!
 @5:56 {04}{10}{0E}¡Has conseguido una {02}{01}seta\ndespertadora{02}{00}!\n¡Su peste espanta el sueño!
 @5:57 {04}{10}{0E}¡Has conseguido un libro de\nla\nbiblioteca: {02}{01}Bestiario de Hyrule{02}{00}!
-@5:58 {04}{10}{0E}¡Has conseguido un libro de\nla\nbiblioteca: {02}{01}Leyenda de los Picori{02}{00}!
+@5:58 {04}{10}{0E}¡Has conseguido un libro de\nla\nbiblioteca: {02}{01}Leyenda de los Minish{02}{00}!
 @5:59 {04}{10}{0E}¡Has conseguido un libro de\nla\nbiblioteca: {02}{01}Historia de las Máscaras{02}{00}!
 @5:60 {04}{10}{0E}¡Has conseguido la {02}{01}llave del\ncementerio{02}{00}!\n¡Ya puedes abrir la verja!
 @5:61 {04}{10}{0E}¡Has recuperado la {02}{01}llave del\ncementerio{02}{00}!\n¡Ya puedes abrir la verja!
@@ -365,9 +365,9 @@
 @8:30 Gran Hada Efímera
 @8:31 Gran Hada Libélula
 @8:36 Mariposa de Alegría
-@8:40 Picori del Bosque
-@8:42 Picori del Pueblo
-@8:44 Picori de la Montaña
+@8:40 Minish del Bosque
+@8:42 Minish del Pueblo
+@8:44 Minish de la Montaña
 @8:46 Vaati Minish
 @8:47 Vasallos
 @8:48 Biblioteca
@@ -432,14 +432,14 @@
 @9:3 Una princesa alegre y radiante de\nla\nfamilia real de Hyrule. Le\nencanta\nescaparse del castillo para\nvisitar a\nsu buen amigo {06}{00}.
 @9:4 Una criatura extraña que a primera\nvista\nparece un gorro. Habla con\nbrusquedad y\ntrata a {06}{00} como a un\nniño, pero en el fondo\naprecia mucho a {06}{00}.
 @9:5 Cuando el joven Minish se puso el\ngorro\nmágico de Ezlo, adoptó esta\nforma\nmalvada. Ahora busca la fuerza de\nla luz\npara hacerse todopoderoso.
-@9:6 El rey de Hyrule. Se dice que fue\nun\nexcelente espadachín: de joven\nse\npresentó al torneo del Festival\nPicori\ny empató con el Herrero.
+@9:6 El rey de Hyrule. Se dice que fue\nun\nexcelente espadachín: de joven\nse\npresentó al torneo del Festival\nMinish\ny empató con el Herrero.
 @9:7 El pilar que sostiene Hyrule.\nTambién\neduca a la princesa Zelda, así\nque\ncuando ella desaparece, se desespera.
 @9:8 El mejor herrero de Hyrule. De joven\nfue\nun gran espadachín. Él y el rey\nDaltus\nson amigos y de jóvenes tuvieron\nuna sana\nrivalidad.
 @9:9 El alcalde de la ciudad de\nHyrule.\nColecciona máscaras extrañas.\nHa\nconstruido un refugio en su jardín por\nsi\nalgún día atacan monstruos.
 @9:10 La segunda al mando de Correos de\nHyrule.\nEs tranquila y relajada, justo\nlo\ncontrario del nervioso y\nexcitable Stamp.
 @9:11 Un empleado de correos trabajador\ny\natareado, aunque algo irritable. El\nsello\nque usa es solo suyo, así que,\npor\nfavor, no se lo pidas. Gracias.
 @9:12 El dueño de la {02}{03}Zapatería de Rem{02}{00}. Con\nsu\n«técnica secreta» hace zapatos\nmientras\nduerme. La princesa Zelda es su\nmejor\nclienta.
-@9:13 Un académico de trato áspero\nobsesionado\ncon estudiar a los Picori.\nParece no\nsaber que, en realidad, viven\nen su\npropia casa.
+@9:13 Un académico de trato áspero\nobsesionado\ncon estudiar a los Minish.\nParece no\nsaber que, en realidad, viven\nen su\npropia casa.
 @9:14 Un escultor de {02}{03}figuras{02}{00} delicadas.\nMuchos\nlo consideran el mejor de todo\nHyrule.\nLe gusta coleccionar\n{02}{03}conchas\nmisteriosas{02}{00}.
 @9:15 El dueño de la {02}{03}tienda del juego de\nlos\ncofres{02}{00}. Es el hermano pequeño de\nCarlov.\nDetesta el juego, pero ha hecho\nla mayor\napuesta de todas: montar un\nnegocio.
 @9:16 El vendedor de equipo del barrio, al\nque\nllaman {02}{03}Stockwell el Surtido{02}{00}. Se queja\nde\nque últimamente está tan ocupado que\nno\npuede ver a su perra, Fifi.
@@ -475,7 +475,7 @@
 @9:46 Antes de ser hechicero era un\nsimple\nMinish. Siempre lo había fascinado\nla\nmaldad que habita en el corazón\nde\nlos hombres...
 @9:47 Estos vasallos sirven al rey de\nHyrule.\nSon leales y diligentes. Como el\npropio\nrey, son corteses pero francos.
 @9:48 La Biblioteca Real de Hyrule. Aunque\nes\nmuy querida, mucha gente olvida\ndevolver\nlos libros, y los bibliotecarios\nno dan\nabasto.
-@9:49 Todos estos espadachines autodidactas\nhan\nganado el torneo de lucha del\nFestival\nPicori. Ven un gran potencial\nen {06}{00}.
+@9:49 Todos estos espadachines autodidactas\nhan\nganado el torneo de lucha del\nFestival\nMinish. Ven un gran potencial\nen {06}{00}.
 @9:50 Esta pareja hornea pan en Hyrule.\nSus\nricos pasteles guardan un secreto:\nsi\ntienes mucha suerte, ¡dentro\nhabrá\nescondido un objeto útil!
 @9:51 Aquí aprenden todos los niños de Hyrule.\n{06}{00}\ny la princesa Zelda también\nestudiaron\naquí. Los dos maestros son\ngemelos y se\nllaman Tina y Dina.
 @9:52 El mejor sitio de la ciudad\npara\nrelajarse. También puedes enterarte\nde\ncosas útiles, desde los últimos\ncotilleos\nhasta observaciones sobre el\nmundo.
@@ -1096,46 +1096,46 @@
 
 # --- Grupo 15: introducción ---
 @15:1 Hace mucho, mucho tiempo...
-@15:2 cuando el mundo estaba a punto de\nser\nengullido por las sombras...
-@15:3 Los diminutos Picori\nbajaron del cielo\ny\ntrajeron al héroe\nuna espada y una\nluz\ndorada.
-@15:4 Con sabiduría y\nvalor, el héroe\nahuyentó\nla\noscuridad.
-@15:5 Restablecida la paz, la gente\nguardó con\ncuidado aquella espada.
-@15:6 Y la fuerza de la luz dorada,\nencarnada\nen la princesa de Hyrule,\nbrilló sobre\nlas tierras.
-@15:7 {03}{01}{E8}Je, je, je...\nConque eso es lo que\nsignifica...
+@15:2 cuando las sombras amenazaban\ncon engullir el mundo...
+@15:3 Los pequeños Minish\nbajaron del cielo\ncon una espada\ny una luz dorada\npara el héroe.
+@15:4 Con sabiduría\ny valor, el héroe\nvenció a las\nsombras.
+@15:5 Al volver la paz, la gente\nguardó aquella espada con cuidado.
+@15:6 Y la fuerza de aquella luz dorada,\nencarnada en la princesa de Hyrule,\nbrilló por toda la tierra.
+@15:7 {03}{01}{E8}Je, je, je...\nConque eso es lo que significa...
 
 # --- Grupo 16: el festival y el castillo ---
 @16:1 {03}{00}{95}Buenos días, {02}{02}maestro Herrero{02}{00}.
-@16:2 {03}{00}{C2}¡Cielos! ¡{02}{02}Princesa Zelda{02}{00}!\n\n¿Te has\nescapado del castillo y has\nvenido hasta\naquí tú sola?\n¡El ministro se\npreocupará\nmucho! ¡Ya sabes cómo se pone!
-@16:3 ¡Oh, no te preocupes por él! Estará\nbien.\n¿Dónde está {06}{00}?\n¡Toda la ciudad está\nde bullicio por el\n{02}{03}Festival Picori{02}{00}\nanual!\nPensé que él y yo podríamos ir\njuntos.\n¿Te importaría mucho?
-@16:4 Ah, ¿es eso a lo que has venido?\n\nBueno,\n{06}{00} se acostó tarde\nayudándome anoche y\nsigue dormido...\nPero tengo un encargo en\nel castillo...\nSí, eso estará bien.\n{07}{10}{05}
+@16:2 {03}{00}{C2}¡Cielos! ¡{02}{02}Princesa Zelda{02}{00}!\n\n¿Te has escapado del castillo\ny has venido hasta aquí tú sola?\n¡El ministro estará preocupado!\n¡Ya sabes cómo se pone!
+@16:3 ¡No te preocupes por él! Estará bien.\n¿Dónde está {06}{00}?\n¡La ciudad está de fiesta por el\n{02}{03}Festival Minish{02}{00} de este año!\nPensé que podríamos ir juntos.\n¿Te importaría mucho?
+@16:4 Ah, ¿a eso has venido?\n\nBueno, {06}{00} se acostó tarde\nayudándome anoche y sigue dormido...\nPero tengo un encargo en el castillo...\nSí, podéis ir juntos.\n{07}{10}{05}
 @16:5 ¡{06}{00}, hora de levantarse!
-@16:9 {04}{10}{00}¡Eh! ¡{06}{00}!\n\nLa {02}{02}princesa Zelda{02}{00} está aquí.\nQuiere saber\nsi irías con ella al\nfestival.
-@16:10 Sí, {06}{00}. ¡Vamos! ¡Vayamos a ver\nel festival\njuntos!\n¡El {02}{02}maestro Herrero{02}{00} ya me ha\ndado\npermiso para llevarte!
-@16:11 {04}{10}{00}Sí. Al fin y al cabo, el festival solo\nes\nuna vez al año. ¡Anda, diviértete!\nY, ya\nque vas, hazme un favor.\nAcabo de\nterminar esta {02}{01}espada {02}{00}para\nel ministro del\n{02}{02}Castillo de Hyrule{02}{00}.\nQuiero que se la\nentregues.
-@16:12 {04}{10}{00}Es la hoja que se entregará al\nganador\ndel torneo. No la pierdas. Y\naunque\nvosotros dos seáis amigos de la\ninfancia,\nrecuerda...\n{07}{10}{0E}
-@16:13 ¡Maestro Herrero, deja de\npreocuparte!\nEstaremos perfectamente a\nsalvo.\n¡Vamos, {06}{00}! ¡A ver\nel festival!
-@16:14 {04}{10}{00}Zelda es la princesa de Hyrule.\n\nVela\npor ella. No dejes que le\nocurra nada\nmalo.
+@16:9 {04}{10}{00}¡Eh! ¡{06}{00}!\n\nLa {02}{02}princesa Zelda{02}{00} está aquí.\nQuiere ir contigo al festival.
+@16:10 Sí, {06}{00}. ¡Vamos a ver\nel festival juntos!\n¡El {02}{02}maestro Herrero{02}{00} ya me ha dado\npermiso para llevarte!
+@16:11 {04}{10}{00}Sí. El festival solo se celebra\nuna vez al año. ¡Anda, diviértete!\nY, ya que vas, hazme un favor.\nAcabo de terminar esta {02}{01}espada {02}{00}para\nel ministro del {02}{02}Castillo de Hyrule{02}{00}.\nQuiero que se la entregues.
+@16:12 {04}{10}{00}Esta hoja es el premio para\nel ganador del torneo. No la pierdas.\nY aunque seáis amigos de la infancia,\nrecuerda...\n{07}{10}{0E}
+@16:13 ¡Maestro Herrero, no te preocupes!\nEstaremos perfectamente a salvo.\n¡Vamos, {06}{00}! ¡A ver\nel festival!
+@16:14 {04}{10}{00}Zelda es la princesa de Hyrule.\n\nVela por ella. No dejes\nque le ocurra nada malo.
 @16:16 {03}{00}{94}¡{06}{00}! ¡Por aquí!\n
 @16:17 Vamos, {06}{00}. Démonos prisa\nhacia el castillo.
 @16:18 {03}{00}{95}¡{06}{00}!\n¡Rápido! ¡Vamos!
 @16:19 ¡Por aquí! ¡Vamos!\n¡Date prisa!
 @16:20 ¡Ya hemos llegado!\n¡La {02}{02}ciudad de Hyrule{02}{00}!
 @16:33 ¡Tenemos ganadora!
-@16:34 ¡Vaya! ¡Princesa Zelda! ¿Ha ganado\nel\npremio gordo de nuestro sorteo?\n¡Guau!\nPuede elegir uno de estos\nmaravillosos\npremios. ¿Cuál será?
-@16:35 Primero tenemos... ¡esta preciosa\n{02}{01}piedra\ncon forma de corazón{02}{00}!\nLuego tenemos...
+@16:34 ¡Vaya! ¡Princesa Zelda! ¿Ha ganado\nel premio gordo de nuestro sorteo?\n¡Puede elegir uno de estos\nmaravillosos premios! ¿Cuál será?
+@16:35 Primero tenemos esta {02}{01}piedra\ncon forma de corazón{02}{00}.\nLuego tenemos...
 @16:36 ¡esta {02}{01}magnífica gema{02}{00}!\nY por último...
 @16:37 este diminuto {02}{01}escudo{02}{00}.
-@16:38 Entonces, ¿cuál le gustaría?\n\nAdivino...\n¿la joya? Ah, pero esta piedra\ncorazón\ntambién es muy bonita.\n¡Elija la que\nquiera!\n
-@16:39 ¡El {02}{01}escudo {02}{00}es adorable! Creo que\nme lo\nquedo.
-@16:40 ¡¿Qué?! ¿Por qué? ¿Por qué quiere\nesa\ncosa tan fea?\n¡¿Y la piedra\ncorazón?! ¡Es bonita!\n\n¡O... o esta gema\ngigante! ¡Es preciosa!\n\nDe verdad, las\ndos son mucho mejores que\nese escudito\nhorrible.
+@16:38 Entonces, ¿cuál le gustaría?\n\nDéjeme adivinar... ¿La joya?\nAunque esta piedra corazón\ntambién es muy bonita.\n¡Elija la que quiera!\n
+@16:39 ¡El {02}{01}escudo{02}{00} es adorable!\nCreo que me lo quedo.
+@16:40 ¡¿Qué?! ¿Por qué quiere\nesa cosa tan fea?\n¡La piedra corazón es muy bonita!\n\n¡Y esta gema gigante es preciosa!\n\nLas dos son mucho mejores\nque ese escudito horrible.
 @16:41 ¡No! Quiero el {02}{01}escudo{02}{00}.\n¿Me lo puede dar?
-@16:42 Qué princesa tan extraña.\nBueno...\nVale.\nAquí tiene su diminuto {02}{01}escudo{02}{00}.\n
-@16:43 ¡Toma! ¡Quiero hacerte un regalo!\n\n¿A\nque este {02}{01}escudo{02}{00} te queda perfecto,\n{06}{00}?
-@16:44 ¡Sí! ¡Lo que pensaba! ¡Te queda\ngenial!\n\nAhora, si pasa algo, ¡podrás\nprotegerme\ncon ese escudo!\n¡Oh! ¡Casi se\nme olvida! Tenemos que\n{02}{03}llevar la espada\ndel maestro Herrero al\ncastillo{02}{00}. Vamos, {06}{00}.
+@16:42 Qué princesa tan extraña.\nBueno... Está bien.\nAquí tiene su diminuto {02}{01}escudo{02}{00}.\n
+@16:43 ¡Toma! ¡Quiero hacerte un regalo!\n\n¿A que este {02}{01}escudo{02}{00} te queda perfecto,\n{06}{00}?
+@16:44 ¡Sí! ¡Te queda genial!\n\nSi pasa algo, podrás protegerme\ncon ese escudo.\n¡Oh! ¡Casi se me olvida!\nTenemos que {02}{03}llevar la espada del\nmaestro Herrero al castillo{02}{00}.\nVamos, {06}{00}.
 @16:54 {04}{10}{0C}{03}{00}{A9}¡Oh! ¡{06}{00}! ¿Has traído la\nespada?\nEntonces,\ncomo ministro del reino de\nHyrule, yo,\n{02}{02}Potho{02}{00}, acepto esta hoja.\nHas llegado\njusto a tiempo. La ceremonia\nde entrega\nde premios empezará pronto.
 @16:55 {03}{00}{94}{04}{10}{0C}Lo siento, {06}{00}, pero será mejor que me\nvaya.\nTengo que preparar la ceremonia.\nMe lo he\npasado muy bien en el festival.\n¡Gracias\npor venir conmigo!
 @16:56 Ya que estás aquí, {06}{00}, ¿por qué no\nte unes\na la ceremonia de premios?
-@16:57 ¿Sabes algo de {02}{01}esa espada{02}{00},\n{06}{00}?\nSe llama\n{02}{01}Hoja Picori{02}{00} y encierra mucho\nmal en ese\ncofre.\nLa {02}{01}Hoja Picori{02}{00} es sagrada para la\ngente\nde Hyrule.\nSegún la leyenda, hace\nmucho los\n{02}{02}Picori{02}{00} nos dieron esta\nhoja.\nQuien gane el torneo tiene el\nhonor\nde tocar la hoja sagrada.
+@16:57 ¿Sabes algo de {02}{01}esa espada{02}{00},\n{06}{00}?\nSe llama\n{02}{01}Hoja Minish{02}{00} y encierra mucho\nmal en ese\ncofre.\nLa {02}{01}Hoja Minish{02}{00} es sagrada para la\ngente\nde Hyrule.\nSegún la leyenda, hace\nmucho los\n{02}{02}Minish{02}{00} nos dieron esta\nhoja.\nQuien gane el torneo tiene el\nhonor\nde tocar la hoja sagrada.
 @16:58 {03}{01}{F2}¡Que comience la ceremonia de\npremios!\n\n¡{02}{02}Vaati{02}{00}, campeón del\ntorneo,\npuedes acercarte a la hoja!
 @16:59 {03}{00}{AA}¡Ah! ¡Princesa Zelda! ¿C--\n¿Cuándo salió\ndel castillo?
 @16:60 {03}{00}{AA}¡Bienvenido al {02}{02}Castillo de Hyrule{02}{00}!
@@ -1144,8 +1144,8 @@
 @16:63 Lo siento, pero no puedo dejarte\npasar.\nHemos cerrado la zona por culpa de\n{02}{02}Vaati{02}{00}.
 @16:64 ¡Ah, la espada para la ceremonia!\nDebes\nllevársela al {02}{02}ministro Potho{02}{00}.\nLo\nencontrarás frente al castillo.
 
-@16:67 Je, je, je...\n\n¡Quién iba a pensar que\nsaldría tan bien!\n\nLa {02}{01}Hoja Picori{02}{00} y el\nCofre Sellado de\nlos que habla la\ntradición hyliana...\n¡Este cofre debe de\nguardar lo que busco!\nAhora os libero de\nsu contenido.
-@16:68 {03}{00}{9B}¡Mmmm, ja, ja, ja!\nNo\ninterfieras...\nComo vencedor, he ganado\nel derecho a\nacercarme a la {02}{01}Hoja\nPicori{02}{00}...\n¡He esperado este momento!
+@16:67 Je, je, je...\n\n¡Quién iba a pensar que\nsaldría tan bien!\n\nLa {02}{01}Hoja Minish{02}{00} y el\nCofre Sellado de\nlos que habla la\ntradición hyliana...\n¡Este cofre debe de\nguardar lo que busco!\nAhora os libero de\nsu contenido.
+@16:68 {03}{00}{9B}¡Mmmm, ja, ja, ja!\nNo\ninterfieras...\nComo vencedor, he ganado\nel derecho a\nacercarme a la {02}{01}Hoja\nMinish{02}{00}...\n¡He esperado este momento!
 @16:69 ¿Quién eres? ¿Por qué haces esto?
 @16:70 La princesa de {02}{03}aura mística{02}{00}...\n\n...¿El\npoder otorgado al pueblo de Hyrule\nsigue\nfluyendo por las venas de las\nmujeres de\nsu familia real? Interesante...\nSi te\ndejo ahora, solo me darás\nproblemas más\ntarde. Eso no puede ser.
 @16:71 ¡Conviértete en piedra!
@@ -1153,15 +1153,15 @@
 @16:73 ...¿?!\n\n¿Vacío? ¿No había nada ahí\ndentro\nsalvo una pandilla de\nmonstruos?\n¿Qué significa esto?\n\nBueno,\nsé que la {02}{01}fuerza{02}{00} que busco\nestá en algún\nlugar.\nNo tengo prisa. Puedo tomarme\nmi\ntiempo para buscarla.\n{03}{00}{9B}Je, je, je...
 @16:74 Je, je, je, je... ¡Quien\nse interponga\ncorrerá igual suerte!\n¡Ahora, a descubrir\nqué poder me espera\nen este cofre!
 @16:75 ¡Aaaaaaay!
-@16:80 {03}{00}{A3}Es tal como habéis oído.\n\nUn hechicero\nllamado {02}{02}Vaati{02}{00} ha maldecido a\nmi querida\nZelda y la ha vuelto piedra.\nSi\ntuviéramos la sagrada {02}{01}Hoja\nPicori{02}{00},\nprobablemente habríamos roto la\nmaldición.\nPero Vaati hizo añicos la\nhoja...\n\nSin embargo, no he perdido la\nesperanza.\n¿Qué sabéis de los {02}{02}Picori{02}{00}?
-@16:81 ¿Los {02}{02}Picori{02}{00}? No mucho, aparte de lo\nque\ndicen los cuentos...\nSe supone que\nson diminutos, si no\nme falla la memoria.
-@16:82 Sí, los de los cuentos...\n\nPero los\nPicori no son una simple leyenda.\nExisten\nsin lugar a dudas.\nNadie fuera de la\nfamilia real conoce\nla verdad sobre\nellos.\nLos Picori, que forjaron la hoja\nsagrada,\nviven en lo profundo del {02}{02}Bosque\nMinish{02}{00}.\nDeberían poder reparar la hoja\nrota\ny reforjar la espada.
+@16:80 {03}{00}{A3}Es tal como habéis oído.\n\nUn hechicero\nllamado {02}{02}Vaati{02}{00} ha maldecido a\nmi querida\nZelda y la ha vuelto piedra.\nSi\ntuviéramos la sagrada {02}{01}Hoja\nMinish{02}{00},\nprobablemente habríamos roto la\nmaldición.\nPero Vaati hizo añicos la\nhoja...\n\nSin embargo, no he perdido la\nesperanza.\n¿Qué sabéis de los {02}{02}Minish{02}{00}?
+@16:81 ¿Los {02}{02}Minish{02}{00}? No mucho, aparte de lo\nque\ndicen los cuentos...\nSe supone que\nson diminutos, si no\nme falla la memoria.
+@16:82 Sí, los de los cuentos...\n\nPero los\nMinish no son una simple leyenda.\nExisten\nsin lugar a dudas.\nNadie fuera de la\nfamilia real conoce\nla verdad sobre\nellos.\nLos Minish, que forjaron la hoja\nsagrada,\nviven en lo profundo del {02}{02}Bosque\nMinish{02}{00}.\nDeberían poder reparar la hoja\nrota\ny reforjar la espada.
 @16:83 ¡¿Q-Qué?! ¡Entonces hay que\nenviar\nsoldados allí de inmediato!
-@16:84 No, los soldados no servirán.\n\nLos\nPicori solo se muestran a los\nniños.\nNuestros soldados podrían buscar\ndías\nenteros sin encontrar rastro de\nellos.
+@16:84 No, los soldados no servirán.\n\nLos\nMinish solo se muestran a los\nniños.\nNuestros soldados podrían buscar\ndías\nenteros sin encontrar rastro de\nellos.
 @16:85 Ya veo...\n\nEn ese caso, ¿por qué\nno\nenviar a {06}{00}?
-@16:86 {03}{01}{EB}Si {06}{00} se ha recuperado, sí,\nme gustaría\npedírselo.\nPor favor, devuelve a mi\npreciada Zelda\na la normalidad.\nLos\n{02}{02}Picori{02}{00} sabrán cómo crear una\nnueva {02}{01}espada\nsagrada{02}{00}.\nSerá un viaje peligroso, ahora\nque\nesos monstruos están libres.\nPor\nfavor, llévate esta espada\ny la {02}{01}Hoja\nPicori{02}{00} rota.
+@16:86 {03}{01}{EB}Si {06}{00} se ha recuperado, sí,\nme gustaría\npedírselo.\nPor favor, devuelve a mi\npreciada Zelda\na la normalidad.\nLos\n{02}{02}Minish{02}{00} sabrán cómo crear una\nnueva {02}{01}espada\nsagrada{02}{00}.\nSerá un viaje peligroso, ahora\nque\nesos monstruos están libres.\nPor\nfavor, llévate esta espada\ny la {02}{01}Hoja\nMinish{02}{00} rota.
 @16:87 ¡Muy bien, entonces! ¡Que los\nsoldados\nbusquen a {02}{02}Vaati{02}{00} de inmediato!
-@16:88 En lo profundo del {02}{02}Bosque Minish{02}{00}\nhallarás\nun lugar, el {02}{02}Santuario del\nBosque Profundo{02}{00}.\nAntaño, humanos y {02}{02}Picori{02}{00}\nlo usaban como\nlugar de encuentro.\nCreo\nque lo mejor sería que empezaras\nla\nbúsqueda allí.
+@16:88 En lo profundo del {02}{02}Bosque Minish{02}{00}\nhallarás\nun lugar, el {02}{02}Santuario del\nBosque Profundo{02}{00}.\nAntaño, humanos y {02}{02}Minish{02}{00}\nlo usaban como\nlugar de encuentro.\nCreo\nque lo mejor sería que empezaras\nla\nbúsqueda allí.
 @16:89 Llévate este {02}{01}mapa{02}{00}.\n\n{07}{10}^
 @16:90 El {02}{02}Bosque Minish{02}{00} está al sureste\nde la\nciudad de Hyrule.\nDe hecho, está justo al\neste de\ntu casa, {06}{00}.
 @16:91 Oh, {06}{00}. Ya estás despierto.\n¿Te encuentras\nbien?\nPonte a mi lado. El rey de\nHyrule\nva a hablar.
@@ -1193,7 +1193,7 @@
 @17:9 ¡¿Qué te pasa?! ¡¿Te gusta verme\nsufrir?!\n¡Ayúdame!
 @17:10 {03}{00}{90}¡Uf! ¡Bien hecho! Por poco. No es que\nno\npudiera con ellos yo solo.\n¡Pero eso es\nlo de menos!\n\n¿Qué hace un niño solo tan\nadentro\ndel bosque?
 @17:11 ¡Ajá! Ya veo.
-@17:12 ¿Los... {02}{02}Picori{02}{00}, dices? ¿Y {02}{02}Vaati{02}{00}?
+@17:12 ¿Los... {02}{02}Minish{02}{00}, dices? ¿Y {02}{02}Vaati{02}{00}?
 @17:13 ¿Vaati ha maldecido a alguien? ¿Qué?\n¡¿La\nhoja sagrada?!
 @17:14 ¿Ah, sí? Ya veo, ya veo... Sabes, tú y\nyo\ntenemos mucho en común.\nVerás, yo también\nbusco romper una\nmaldición de Vaati.\nY\ndices que reforjar la {02}{01}hoja\nsagrada{02}{00} puede\nromper su maldición, ¿eh?\n¡Pues entonces\nhas encontrado\ncompañero, muchacho!\nMe\nllamo {02}{02}Ezlo{02}{00}. Es un placer conocerte.
 @17:15 {03}{00}{92}¡Espera! ¡Espera, te digo!\n\n¡Caminas muy\ndeprisa!\n¡Demasiado, de hecho!\n¿No\npuedes ir más despacio? Seguro\nque has\nnotado que no tengo piernas...
@@ -1203,7 +1203,7 @@
 @17:19 ¡Eh! ¿Adónde vas?\n¡Mocoso sin corazón!\n¡Ayúdame!
 @17:20 ¿Qué haces? ¿No vas a\nacabar con ellos?
 @17:21 ...¿Qué? ¿Tengo algo en la cara?\n¡Deja de\nmirarme! ¡Es de mala educación!
-@17:23 Oh, {06}{00}. Vas hacia el\n{02}{02}Bosque Minish{02}{00},\n¿verdad?\n¡Déjanos a nosotros los\nmonstruos que\n{02}{02}Vaati {02}{00}liberó y ve a buscar\na los {02}{02}Picori{02}{00}!
+@17:23 Oh, {06}{00}. Vas hacia el\n{02}{02}Bosque Minish{02}{00},\n¿verdad?\n¡Déjanos a nosotros los\nmonstruos que\n{02}{02}Vaati {02}{00}liberó y ve a buscar\na los {02}{02}Minish{02}{00}!
 @17:24 El {02}{02}Bosque Minish {02}{00}está muy al sur de\naquí.\nSi te pierdes, mira tu {02}{01}mapa{02}{00}.
 @17:26 ¡Eh, chico! ¿Adónde vas?\n¡Por ahí es por\ndonde acabamos de venir!
 @17:29 Quien desee entrar en el reino de\nlos\nMinish, que busque el portal\noculto.\nOfrezca su canción en la base del\nportal\ny será guiado al mundo de abajo.
@@ -1211,10 +1211,10 @@
 @17:41 Supongo que hace mucho que no ven a\nun\nhumano.\n...¿Qué? ¿No has entendido lo\nque\nhan dicho?\nAh, sí. Era el idioma de\nlos\n{02}{02}Minish{02}{00}.\nEs un poco distinto del\ndialecto que\nyo conozco mejor.\nMe temo\nque yo tampoco he captado\ngran parte de\nlo que dijeron.\nPero quizá haya alguien\naquí que\n{02}{03}entienda tu idioma{02}{00}.\nDeberíamos\nechar un vistazo.
 @17:43 Por suerte, el {02}{01}Elemento Tierra {02}{00}está en\nel\n{02}{02}santuario {02}{00}del extremo de la\naldea.\nPero una horda de bestias vive en\nese\n{02}{02}santuario{02}{00}, así que entra con cuidado.
 @17:48 {03}{02}{0D}¡Oh! ¡Hablas nuestro idioma!\n\n¡Hacía\nmucho que no oíamos a forasteros\nhablar\nnuestra lengua!\nTenemos poco que\nofrecerte en estos\nbosques, pero disfruta\nde tu estancia.
-@17:49 Gracias por la oferta, pero no\ntenemos\ntiempo para descansar. Me llamo\n{02}{02}Ezlo{02}{00}.\nEste niño es {06}{00}.\n\nTenemos que\nromper una {02}{03}maldición {02}{00}que\nha caído sobre\nla princesa de Hyrule.\nPara ello,\nnecesitamos reforjar\nla {02}{01}Hoja Picori{02}{00} rota.
+@17:49 Gracias por la oferta, pero no\ntenemos\ntiempo para descansar. Me llamo\n{02}{02}Ezlo{02}{00}.\nEste niño es {06}{00}.\n\nTenemos que\nromper una {02}{03}maldición {02}{00}que\nha caído sobre\nla princesa de Hyrule.\nPara ello,\nnecesitamos reforjar\nla {02}{01}Hoja Minish{02}{00} rota.
 @17:50 Ah, sí. ¿Y has venido esperando\nque\nreforjen la hoja?\nHm... Pues si es\neso lo que buscas,\nnecesitarás cuatro\n{02}{01}elementos{02}{00} místicos.\nEstos elementos son\nlas formas cristalinas\nde las energías de\neste mundo.\nSolo {02}{03}imbuyendo la hoja{02}{00} con\nestas\nenergías se puede forjar una\nnueva.\nToma, dame tu mapa. Puedo\nmarcar\ndónde se encuentran estos\n{02}{01}elementos{02}{00}.
 @17:51 El {02}{01}Elemento Tierra{02}{00} se encuentra en\nel\n{02}{02}santuario{02}{00} al norte de la abadía de\n{02}{02}Festari{02}{00}.\nHabla con {02}{02}Festari{02}{00}. Te mostrará\nel camino\nhasta la entrada del\n{02}{02}santuario{02}{00}.\nVe con cuidado. Criaturas\nmalvadas\nhan hecho su hogar en nuestro\n{02}{02}santuario{02}{00}.\nVuelve a mí en cuanto hayas\nencontrado\nel {02}{01}Elemento Tierra{02}{00}.
-@17:53 {03}{02}{0D}¡Conque has encontrado el {02}{01}Elemento\nTierra{02}{00}!\n\nEstás bendecido con mucho valor\ny fuerza\npara alguien tan joven.\nSi tu\nconvicción se mantiene firme, ve\nal {02}{02}Monte\nCrenel{02}{00}.\nAllí encontrarás a un hombre\nllamado {02}{02}Melari{02}{00}.\n\nEntre todos los Minish,\nnadie es más\ncapaz de reparar tu\nespada.\nSi se lo pides, estoy seguro de\nque\nreforjará tu {02}{01}Hoja Picori rota{02}{00}.\nLe\nenviaré aviso de antemano.\n\nViaja con\ncuidado. Eres valiente, pero\nhay muchos\nmales ahora en el mundo.
+@17:53 {03}{02}{0D}¡Conque has encontrado el {02}{01}Elemento\nTierra{02}{00}!\n\nEstás bendecido con mucho valor\ny fuerza\npara alguien tan joven.\nSi tu\nconvicción se mantiene firme, ve\nal {02}{02}Monte\nCrenel{02}{00}.\nAllí encontrarás a un hombre\nllamado {02}{02}Melari{02}{00}.\n\nEntre todos los Minish,\nnadie es más\ncapaz de reparar tu\nespada.\nSi se lo pides, estoy seguro de\nque\nreforjará tu {02}{01}Hoja Minish rota{02}{00}.\nLe\nenviaré aviso de antemano.\n\nViaja con\ncuidado. Eres valiente, pero\nhay muchos\nmales ahora en el mundo.
 @17:54 Sal por esta puerta de aquí. Te\nsacará\ndel bosque enseguida.
 @17:55 Gran anciano, estamos en deuda\ncontigo.\n\n¡Iremos al {02}{02}Monte Crenel{02}{00}\nahora\nmismo!
 
@@ -1262,7 +1262,7 @@
 @18:55 ¿Quieres {02}{03}fusionar piedras{02}{00}?
 @18:56 ¡Vamos a {02}{03}fusionar piedras{02}{00}!
 @18:57 ¡{02}{03}Fusionar piedras{02}{00} es genial!
-@18:61 {03}{02}{0C}{04}{10}{0E}¿Ropa verde? ¡¿Y un gorro raro?!\n¡Señor!\n¿Será usted el joven {06}{00}?\nSoy {02}{02}Melari{02}{00},\nmaestro herrero.\n\nMe han dicho que\nquiere que reforje la\n{02}{01}espada sagrada{02}{00} para\nromper una maldición.\nPrimero necesito la\nvieja espada, que\nguarda el poder de los\n{02}{01}elementos{02}{00}.\n¡Enséñeme esa {02}{01}Hoja Picori\nrota{02}{00}!\n\nMe encanta tanta aventura, con lo\nde\nrescatar princesas y todo eso.\nMe\nalegrará reforjar esto para\ndarle una\nnueva hoja sagrada.
+@18:61 {03}{02}{0C}{04}{10}{0E}¿Ropa verde? ¡¿Y un gorro raro?!\n¡Señor!\n¿Será usted el joven {06}{00}?\nSoy {02}{02}Melari{02}{00},\nmaestro herrero.\n\nMe han dicho que\nquiere que reforje la\n{02}{01}espada sagrada{02}{00} para\nromper una maldición.\nPrimero necesito la\nvieja espada, que\nguarda el poder de los\n{02}{01}elementos{02}{00}.\n¡Enséñeme esa {02}{01}Hoja Minish\nrota{02}{00}!\n\nMe encanta tanta aventura, con lo\nde\nrescatar princesas y todo eso.\nMe\nalegrará reforjar esto para\ndarle una\nnueva hoja sagrada.
 @18:62 {04}{10}{00}Me llevará un rato reformar tu\nespada.\nMientras tanto, deberías buscar\nlos\n{02}{01}elementos{02}{00} que faltan.\nUno debería\nestar en la {02}{02}mina{02}{00} que cavaron\nlos humanos.\nNo queda lejos de aquí.
 @18:63 {04}{10}{00}¡Muy bien! ¡Manos a la obra!
 @18:64 {03}{00}{92}Tardarán un rato, {06}{00}. ¡Dejémosles\ntrabajar\ny busquemos ese {02}{01}elemento{02}{00}!
@@ -1288,7 +1288,7 @@
 @19:17 ¡¡¡AAAAAAA!!!
 @19:18 {04}{10}{07}¡Ja, ja, ja, ja, ja, ja!\n\nDime, ¿qué se\nsiente con\nmi {02}{03}maldición de\nhechicero{02}{00}?\n¿Ves, Ezlo? Ahora soy de\nverdad tu\nmaestro y no puedes\ndetenerme.\nY con esto, debo marcharme.
 @19:19 ¡Espera! ¡Espera, te digo!\n¡{02}{02}Vaati{02}{00}!
-@19:20 Conoces las leyendas, claro. Los\nregalos\nde los Picori a los humanos...\nLo que\nllamas {02}{01}Hoja Picori{02}{00} fue el\nprimero de esos\nregalos. El segundo...\nBueno, tú lo\nllamas {02}{01}fuerza de la luz{02}{00},\npero es una\nfuente de poder mágico ilimitado.\nSi\n{02}{02}Vaati {02}{00}lo consiguiera ahora,\nsería\ndevastador.\nVine al mundo de los\nhombres con la\nesperanza de detener a\nVaati y te\nconocí en el bosque.\nPero\nparece que no romperemos mi\nmaldición\npronto.\nSin embargo, con la hoja\nsagrada\npodemos restaurar a la {02}{02}princesa\nZelda{02}{00}.\nLo siento. Todo lo ocurrido se\ndebe a\nmi propio orgullo. A mi\nnecedad.\nTengo que contar contigo y con\ntu poder\nhasta que acabemos con Vaati.
+@19:20 Conoces las leyendas, claro. Los\nregalos\nde los Minish a los humanos...\nLo que\nllamas {02}{01}Hoja Minish{02}{00} fue el\nprimero de esos\nregalos. El segundo...\nBueno, tú lo\nllamas {02}{01}fuerza de la luz{02}{00},\npero es una\nfuente de poder mágico ilimitado.\nSi\n{02}{02}Vaati {02}{00}lo consiguiera ahora,\nsería\ndevastador.\nVine al mundo de los\nhombres con la\nesperanza de detener a\nVaati y te\nconocí en el bosque.\nPero\nparece que no romperemos mi\nmaldición\npronto.\nSin embargo, con la hoja\nsagrada\npodemos restaurar a la {02}{02}princesa\nZelda{02}{00}.\nLo siento. Todo lo ocurrido se\ndebe a\nmi propio orgullo. A mi\nnecedad.\nTengo que contar contigo y con\ntu poder\nhasta que acabemos con Vaati.
 @19:21 Bueno, {06}{00}, ¡basta de cuentos!\n¡Debemos\nbuscar el siguiente {02}{01}elemento{02}{00}!
 @19:22 ¡Vaati! ¿Qué haces?
 @19:24 ¿Eh? Qué sensación tan rara. He\nnotado\nalgo desde el castillo.\nO...\n¿serán solo imaginaciones mías?
@@ -1296,7 +1296,7 @@
 @19:26 Uhn... ¡¿Qué haces?!
 @19:27 {03}{00}{9B}¡Ja, ja, ja, ja, ja, ja, ja, ja!{03}{00}{A7}
 @19:28 {03}{00}{A9}Parece que estáis todos aquí. Muy\nbien.\nEl rey de Hyrule tiene unas\npalabras\npara vosotros.
-@19:29 {03}{00}{A3}Todos conocéis el poder que los\nPicori\nentregaron a la humanidad,\n¿verdad?\nLa {02}{01}fuerza de la luz{02}{00} dorada, de\npoder\nmágico ilimitado...\n¡¡¡La\nquiero!!! Está en algún lugar de\nHyrule.\n¡Id y traedme ese poder!
+@19:29 {03}{00}{A3}Todos conocéis el poder que los\nMinish\nentregaron a la humanidad,\n¿verdad?\nLa {02}{01}fuerza de la luz{02}{00} dorada, de\npoder\nmágico ilimitado...\n¡¡¡La\nquiero!!! Está en algún lugar de\nHyrule.\n¡Id y traedme ese poder!
 @19:30 ¡No perdáis tiempo! ¡Marchad ahora\nmismo\ny traedme la {02}{01}fuerza de la luz{02}{00}!\n¡Al\nque se niegue, a la mazmorra!\n¡A él y a\nsu familia también!\n¡No toleraré\ndesobediencia!\n\n¡Ahora, buscad por cada\nrincón\nde las tierras de Hyrule!
 @19:31 Hmm... Quizá sea solo el viento...\nPero\nespero que no haya pasado nada malo.\nEn\nfin, tenemos que buscar el\nsiguiente\n{02}{01}elemento{02}{00}.\nEl mapa dice que\ndebería estar\npor aquí cerca...
 @19:32 {03}{00}{AA}¡Por orden del rey,\nnadie pasa!\n¡Ahora,\nlargo de aquí!
@@ -1304,16 +1304,16 @@
 @19:34 {03}{00}{AA}He oído que este castillo tiene\nuna\n{02}{03}entrada secreta{02}{00}...\nSi alguna vez la\nnecesitas, deberías\nbuscar esa {02}{03}entrada\n{02}{00}algún día...
 @19:36 Somos la {02}{02}tribu del Viento{02}{00}.\n\nDesde hace\nmucho vivimos con los vientos.\nLos\ndominamos. Ahora nos unimos a\nellos.\nJuntos, con los grandes vientos a\nnuestra\nespalda, partimos hacia los\ncielos.\nQuienes busquen nuestro poder\ndeben tocar\nlas {02}{03}notas{02}{00} que enseña\nZeffa.\nQue ellas os guíen hasta el\npoder\nque buscáis.
 @19:37 {03}{00}{91}Creo que aquí es donde vivía la\n{02}{02}tribu del\nViento{02}{00}.\nHm... Así que se han ido a los\ncielos\ny se han llevado su\n{02}{01}elemento{02}{00}.\nParece que el {02}{01}Elemento Viento\n{02}{00}está fuera\nde nuestro alcance por\nahora.\nNo nos queda más remedio que\nseguir.\nSalgamos de aquí.
-@19:38 {03}{00}{A3}¡Oh! ¡{06}{00}! ¡Has vuelto!\n¿Has encontrado a\nlos Picori?\nYa veo. ¿Y quieren que\nreúnas\nlos {02}{01}cuatro elementos{02}{00}?\nBueno,\nparece que debo volver a contar\ncontigo\npara restaurar a Zelda.\nPor favor,\n¡tienes que forjar de nuevo\nla hoja\nsagrada, y rápido!\n¡Cuento contigo, {06}{00}!
+@19:38 {03}{00}{A3}¡Oh! ¡{06}{00}! ¡Has vuelto!\n¿Has encontrado a\nlos Minish?\nYa veo. ¿Y quieren que\nreúnas\nlos {02}{01}cuatro elementos{02}{00}?\nBueno,\nparece que debo volver a contar\ncontigo\npara restaurar a Zelda.\nPor favor,\n¡tienes que forjar de nuevo\nla hoja\nsagrada, y rápido!\n¡Cuento contigo, {06}{00}!
 @19:39 {03}{00}{A9}¡Oh! ¡{06}{00}! Dime, ¿has estado\ncuidándote?
 @19:40 {03}{00}{AA}¿Qué pasa, {06}{00}? Su majestad\nestá en la sala\nde atrás.
 @19:41 {03}{00}{A3}¡Oh! ¿{06}{00}? ¡Has vuelto!\nBienvenido. ¿Has\nreunido los elementos?\n¿Qué? ¿Un\n{02}{02}santuario{02}{00}, dices? ¡Nunca\nhe oído hablar\nde eso en mi castillo!
-@19:42 {03}{00}{A9}Hmmm... Un {02}{02}santuario{02}{00}...\n\nSabes, recuerdo\nuna historia que mi\nabuela me contó hace\nmucho.\nDecía que de niña vio aparecer\nuna\n{02}{03}puerta{02}{00} en el {02}{03}patio del palacio{02}{00}.\nSi\nesa puerta de verdad se abre solo\nuna vez\nal siglo, ¡quizá esté abierta ya!\nComo\nlos propios Picori, la puerta\nsolo la ven\nlos ojos de un niño.\nQuizá hayamos pasado\njunto a ella hace\npoco sin saber siquiera\nque estaba ahí...
+@19:42 {03}{00}{A9}Hmmm... Un {02}{02}santuario{02}{00}...\n\nSabes, recuerdo\nuna historia que mi\nabuela me contó hace\nmucho.\nDecía que de niña vio aparecer\nuna\n{02}{03}puerta{02}{00} en el {02}{03}patio del palacio{02}{00}.\nSi\nesa puerta de verdad se abre solo\nuna vez\nal siglo, ¡quizá esté abierta ya!\nComo\nlos propios Minish, la puerta\nsolo la ven\nlos ojos de un niño.\nQuizá hayamos pasado\njunto a ella hace\npoco sin saber siquiera\nque estaba ahí...
 @19:43 {03}{00}{AA}¿Un {02}{02}santuario{02}{00}? No, creo que habría\nvisto\nalgo así en el castillo...
 @19:44 {03}{00}{AA}¿Un {02}{02}santuario{02}{00}? Hm... Los cuentos\ndel\n{02}{02}ministro{02}{00} mencionan un santuario,\ncreo...
 @19:45 {03}{00}{92}¡{06}{00}, mira!\n¿Ves cómo brilla esa\npuerta?\n¿Será la puerta que lleva\nal\n{02}{02}santuario{02}{00}?\nParece que nadie en el\ncastillo la ve\nsalvo tú y yo...\n¡Vamos!\n¡Rápido!
 @19:46 {03}{00}{A3}¿La puerta del {02}{02}santuario elemental{02}{00}\nestá\nen el patio del castillo?\nLos adultos\nsolo vemos otra pared\ncorriente...\n¡Increíble!\nPor favor, reúne los dos\n{02}{01}elementos{02}{00}\nque faltan y repara la {02}{01}espada\nsagrada{02}{00}.\nCuento contigo, {06}{00}.\nNunca lo\nolvides.
-@19:47 {03}{00}{A9}¡Oh, vaya! ¿La puerta estaba de verdad\nen\nel jardín? ¡Mi abuela tenía razón!\nBueno,\nmi familia siempre ha destacado\npor su\nhonestidad ante todo.\nPero sigo sin\nentenderlo...\n\n¿Por qué los niños pueden\nver a los\nPicori y la puerta, y yo no?
+@19:47 {03}{00}{A9}¡Oh, vaya! ¿La puerta estaba de verdad\nen\nel jardín? ¡Mi abuela tenía razón!\nBueno,\nmi familia siempre ha destacado\npor su\nhonestidad ante todo.\nPero sigo sin\nentenderlo...\n\n¿Por qué los niños pueden\nver a los\nMinish y la puerta, y yo no?
 @19:48 {04}{10}{07}¡{02}{02}Vaati{02}{00}! ¿Qué haces ahí?
 
 # --- Grupo 20: el rey Gustaf ---
@@ -1398,7 +1398,7 @@
 # --- Grupo 27: carpinteros de Hyrule ---
 @27:2 Me llamo {02}{02}Mutoh{02}{00}. Soy el capataz\nde\ncarpinteros por aquí.\nEl rey de\nHyrule me ha encargado la\nreconstrucción\nde la ciudad.\n¿Esta zona donde estás? ¡Es\nzona de obras!\nEs demasiado peligrosa\npara un\nniño como tú.
 @27:3 {03}{00}{B5}Me llamo {02}{02}Mutoh{02}{00}. Soy el capataz\nde\ncarpinteros por aquí.\nEl mismísimo\nrey de Hyrule me ha\nencargado este\nproyecto.\nVerás, el ataque de ese\nhechicero\ndestrozó esta zona.\nSabes,\nchico, no deberías jugar\ncerca de la zona\nde obras.
-@27:5 Entonces, ¿la Hoja Picori era solo\nun\ncandado que mantenía a esos monstruos\nen\nese cofre? Se rumorea que Vaati\nbuscaba\nalgo dentro del cofre...\nQuiero\ndecir, algo aparte de monstruos.\nPero\nnadie sabe con certeza qué es.\nTe digo\nque no ha sido más que un\nquebradero de\ncabeza para todos.
+@27:5 Entonces, ¿la Hoja Minish era solo\nun\ncandado que mantenía a esos monstruos\nen\nese cofre? Se rumorea que Vaati\nbuscaba\nalgo dentro del cofre...\nQuiero\ndecir, algo aparte de monstruos.\nPero\nnadie sabe con certeza qué es.\nTe digo\nque no ha sido más que un\nquebradero de\ncabeza para todos.
 @27:6 Nos hemos ocupado de casi todos\nlos\nmonstruos de por aquí.\nPero ten\ncuidado cerca del {02}{02}Bosque Minish{02}{00}.\nEstá\nplagado de ellos.
 @27:13 {03}{00}{CA}¡Uf! ¡Estoy ocupado, chico!\n\nEl jefe\nsiempre se asegura de que\nno levantemos\nla nariz del trabajo.
 @27:14 {03}{00}{CA}¡Ah! ¡No hay tiempo para charlar,\nchico!\n\n¡El jefe nos tiene\ndeslomándonos!\n¡Ni un descanso!
@@ -1531,7 +1531,7 @@
 @33:78 {03}{02}{01}Oh, entonces lo siento... Si cambias\nde\nopinión, avísame.
 
 # --- Grupo 34: Ezlo y el tocón ---
-@34:1 Debería haber algunos {02}{02}Minish{02}{00} viviendo\nen\neste bosque.\n¿Eh? ¿Quiénes son los\n{02}{02}Minish{02}{00}? ¡Ah, sí,\nqué tonto soy!\nLos\nhumanos los llamáis «{02}{02}Picori{02}{00}», ¡pero\nellos\nse llaman a sí mismos {02}{02}Minish{02}{00}!\nQué curioso\nque, en el mundo de los humanos,\nsolo\neste bosque haya conservado el\nnombre...\nEn fin, en lo profundo del\nbosque\nconstruyeron una aldea diminuta\ndonde viven\nmuchos. Pero para entrar\ntendremos que\nhacerte un poco más\npequeño.\nBusca un tocón de árbol.\nEntonces podré\nreducirte al tamaño de un\n«{02}{02}Picori{02}{00}».
+@34:1 Debería haber algunos {02}{02}Minish{02}{00} viviendo\nen\neste bosque.\n¿Eh? ¿Quiénes son los\n{02}{02}Minish{02}{00}? ¡Ah, sí,\nqué tonto soy!\nLos\nhumanos los llamáis «{02}{02}Minish{02}{00}», ¡pero\nellos\nse llaman a sí mismos {02}{02}Minish{02}{00}!\nQué curioso\nque, en el mundo de los humanos,\nsolo\neste bosque haya conservado el\nnombre...\nEn fin, en lo profundo del\nbosque\nconstruyeron una aldea diminuta\ndonde viven\nmuchos. Pero para entrar\ntendremos que\nhacerte un poco más\npequeño.\nBusca un tocón de árbol.\nEntonces podré\nreducirte al tamaño de un\n«{02}{02}Minish{02}{00}».
 @34:3 ¡Bienvenido al mundo visto con los\nojos\nde los Minish!\nA que ahora te\nalegras de haberme salvado.\n¡Pero no hace\nfalta que me des las gracias!\nHay\nportales que reducen tu tamaño\n{02}{03}por todas\npartes, de distintas formas y tamaños{02}{00}.{02}{03}\n{02}{00}Si\nquieres volver a la normalidad,\nponte\njunto a un portal y pulsa {0C}{03}.\nPero\nhay algo que debes saber:\n¡{02}{03}ser tan\npequeño como un Minish\nestá lleno de\npeligros{02}{00}!\nLos simples charcos de tu\ntamaño normal\nson pantanos sin fondo para\nlos Minish.\nY como tu compañero, ¡si te\npasa algo\nmalo, también me pasa a\nmí!\n¡Así que avanza con cuidado,\nmuchacho!\nSi no por ti, ¡por mí!
 
 # --- Grupo 35: Percy y los habitantes ---
@@ -1559,43 +1559,43 @@
 @36:12 ¡Oh! ¡{06}{00}!\n\n¿Eres tú quien rompió la\nmaldición y\nme devolvió a la\nnormalidad?\nDebo decir que te has vuelto\nmuy valiente\ndesde la última vez que te\nvi.\nPero, ay, cuánto ha sufrido este\ncastillo\nmientras estuve bajo la\nmaldición de {02}{02}Vaati{02}{00}...\n¿Es todo obra de un\nsolo hombre?\n\nComo {02}{02}rey de Hyrule{02}{00}, debo\nhacer algo\ncontra este\nvillano...\nPero... Ah, soy viejo y\nsolo\nte estorbaría.\n{06}{00}, ahora tienes la\n{02}{01}hoja sagrada{02}{00}.\nTenemos que contar\ncontigo.\n¡Por favor! Debes encontrar la\nmanera de\nrescatar a mi {02}{02}Zelda{02}{00}.\nToma esta\nllave. Con ella podrás salir\ndel castillo\ndesde el sótano.
 @36:13 Si me uniera a ti, temo que solo\nsería un\nestorbo.\nPor favor, {06}{00}, tienes que\nencontrar\nla forma de salvar a mi hija.
 
-# --- Grupo 37: el Festival Picori ---
-@37:1 ¡Ya hemos llegado, {06}{00}!\n¿A que parece\ndivertido?\n{07}%{02}
+# --- Grupo 37: el Festival Minish ---
+@37:1 ¡Ya hemos llegado, {06}{00}!\n¿A que parece divertido?\n{07}%{02}
 @37:2 ¡Vamos! ¡Echemos un vistazo!
-@37:3 {06}{00}, ¡hay un narrador de cuentos!\nDeberíamos\npararnos a escuchar...\n¡Oh! ¿Qué habrá\npor allí?...
-@37:4 ¡Así que los {02}{02}Picori {02}{00}EXISTEN! Mi\npadre\nsiempre decía que sí.\n¡Oh! ¡Mira\neso!
-@37:5 Oye, ¿no iba a haber un {02}{03}torneo de\nesgrima{02}{00}\nen el castillo?\nMe pregunto quién habrá\nganado este año...\n\n¡Oh, vaya! ¡Por\naquí!
+@37:3 ¡{06}{00}, hay un cuentacuentos!\nDeberíamos pararnos a escuchar...\n¡Oh! ¿Qué habrá por allí?...
+@37:4 ¡Así que los {02}{02}Minish{02}{00} EXISTEN!\nMi padre siempre decía que sí.\n¡Oh! ¡Mira eso!
+@37:5 ¿No había un {02}{03}torneo de esgrima{02}{00}\nen el castillo?\nMe pregunto quién habrá ganado...\n\n¡Oh, vaya! ¡Por aquí!
 @37:6 ¡{06}{00}! ¿Adónde vas?\n¡Por aquí! ¡Por este\nlado!
-@37:12 ¡Bienvenido al {02}{03}Festival Picori{02}{00}!\n\nDicen\nque, cada cien años,\nlos Picori vienen a\nHyrule...\n¡Y este es el año cien, día por\ndía,\ndesde la última vez que estuvieron\naquí!
-@37:13 Hace mucho, mucho tiempo, y antes\naún...\nAparecieron criaturas malvadas en\nel mundo\nde los humanos.\nEran bestias\npoderosas y aterradoras,\n¡y causaron\nmuchos problemas!\nPero entonces los\n{02}{02}Picori{02}{00} bajaron del cielo\ny trajeron a los\nhumanos una magia poderosa.\nCon la mágica\nfuerza de la luz y la\nHoja Picori, las\nbestias fueron repelidas.\nY el mundo de\nlos humanos volvió a\nconocer la paz,\ngracias a los Picori.\nPara no olvidar\nnuestra gratitud,\ncelebramos este\nfestival cada año.\nAhora recordad,\npequeños... Los Picori\nsolo se muestran\nante los niños buenos.\n¡Si solo hacéis\ncosas malas, nunca\npodréis verlos! ¡Así\nque portaos bien!
-@37:14 ¡No creo en los Picori!\n\n¡Ya no soy un\nniño! ¡Soy demasiado mayor\npara creer en\ncuentos de hadas tontos!
-@37:15 ¿Crees que veré de verdad a los Picori\nsi\nme porto bien todo el tiempo?
-@37:16 ¡Acercaos! ¡Venid todos!\n¡Reuníos y echad\nun vistazo!\n¡Tengo grandes rebajas en\nverduras\ndeliciosas y festivas de todo\ntipo!
+@37:12 ¡Bienvenido al {02}{03}Festival Minish{02}{00}!\n\nDicen\nque, cada cien años,\nlos Minish vienen a\nHyrule...\n¡Y este es el año cien, día por\ndía,\ndesde la última vez que estuvieron\naquí!
+@37:13 Hace mucho, mucho tiempo,\ny aun antes de eso...\nUnas criaturas malvadas aparecieron\nen el mundo de los humanos.\nEran bestias poderosas y temibles\nque causaban muchos problemas.\nPero los {02}{02}Minish{02}{00} bajaron del cielo\ncon una magia muy poderosa.\nCon la fuerza de la luz y la\nHoja Minish, ahuyentaron a las bestias.\nLos humanos volvieron a vivir en paz\ngracias a los Minish.\nPara recordar nuestra gratitud,\ncelebramos este festival cada año.\nRecordad, pequeños: los Minish\nsolo se muestran a los niños buenos.\nSi os portáis mal, nunca los veréis.\n¡Así que sed buenos!
+@37:14 ¡No creo en los Minish!\n\n¡Ya no soy un\nniño! ¡Soy demasiado mayor\npara creer en\ncuentos de hadas tontos!
+@37:15 ¿Crees que veré de verdad a los Minish\nsi\nme porto bien todo el tiempo?
+@37:16 ¡Acercaos! ¡Venid todos!\n¡Reuníos y echad un vistazo!\n¡Tengo grandes rebajas en todo tipo\nde deliciosas verduras de fiesta!
 @37:17 ¡Oh, hola! ¿Te gusta el festival?\n¡Es muy\ndivertido!\n¡Estoy encantada de estar\naquí! ¡Y mi fruta\nfresca está riquísima!\n¡Compra un poco!
 @37:18 ¡Venid todos! ¡Probad suerte\ny ganad\npremios increíbles!
-@37:19 Oye, tú, ¿has visto alguna vez a\nlos\nPicori? ¡Yo vi uno el otro\ndía!\nLlevaba un gorro rojo en forma de\ncono\ny era muy pequeño...\n¡Y estaba\ndentro del zapato de mi papá!\n¡Lo vi de\nverdad! ¡Lo juro!
-@37:20 Entonces, entonces, entonces... ¿he sido\nbueno\ntodo el año? ¿Todo el año\nentero?\n¿Y sabes que los Picori solo se\nmuestran\nsi has sido bueno?\nY por eso,\npor eso, por eso solo espero a\nque los\nPicori vengan a jugar conmigo.
-@37:21 Solo una vez cada cien años se abre\nla\npuerta mística.\nEs la puerta que une el\nmundo humano\ncon el mundo de los\n{02}{02}Picori{02}{00}.\nCuando se abre, los {02}{02}Picori{02}{00}\npueden\nentrar en nuestro mundo. ¡Y\nadivina qué!\n¡Se cumplen cien años desde\nla última\nvez que aparecieron\naquí!\n¡Seguro que algo\nmaravilloso\nocurrirá en este festival!
-@37:22 Cada año hay un torneo de esgrima en\nel\n{02}{03}Festival Picori{02}{00}.\nEl torneo de este\naño ya ha terminado.\n¡No me podía creer\nlo rápido que fue!\nDicen que {02}{02}el vencedor\nfue un hombre\nmisterioso vestido\nenteramente de negro{02}{00}.
-@37:23 Dicen que los Picori traen felicidad\na\ntodos los humanos que conocen...\nMe\npregunto cuándo me traerán\nfelicidad a\nmí...
+@37:19 Oye, tú, ¿has visto alguna vez a\nlos\nMinish? ¡Yo vi uno el otro\ndía!\nLlevaba un gorro rojo en forma de\ncono\ny era muy pequeño...\n¡Y estaba\ndentro del zapato de mi papá!\n¡Lo vi de\nverdad! ¡Lo juro!
+@37:20 Entonces, entonces, entonces... ¿he sido\nbueno\ntodo el año? ¿Todo el año\nentero?\n¿Y sabes que los Minish solo se\nmuestran\nsi has sido bueno?\nY por eso,\npor eso, por eso solo espero a\nque los\nMinish vengan a jugar conmigo.
+@37:21 Solo una vez cada cien años se abre\nla\npuerta mística.\nEs la puerta que une el\nmundo humano\ncon el mundo de los\n{02}{02}Minish{02}{00}.\nCuando se abre, los {02}{02}Minish{02}{00}\npueden\nentrar en nuestro mundo. ¡Y\nadivina qué!\n¡Se cumplen cien años desde\nla última\nvez que aparecieron\naquí!\n¡Seguro que algo\nmaravilloso\nocurrirá en este festival!
+@37:22 Cada año hay un torneo de esgrima en\nel\n{02}{03}Festival Minish{02}{00}.\nEl torneo de este\naño ya ha terminado.\n¡No me podía creer\nlo rápido que fue!\nDicen que {02}{02}el vencedor\nfue un hombre\nmisterioso vestido\nenteramente de negro{02}{00}.
+@37:23 Dicen que los Minish traen felicidad\na\ntodos los humanos que conocen...\nMe\npregunto cuándo me traerán\nfelicidad a\nmí...
 @37:24 ¿Te lo estás pasando bien, {06}{00}?\n¡Es el\nfestival más grande de {02}{02}Hyrule{02}{00}!\nSi no te\nparas a disfrutarlo,\n¡te perderás toda la\ndiversión!
 @37:25 Llevo un tiempo de viaje.\nHe vuelto a\ntiempo para el festival.\n¡Qué maravilla\nvolver otra vez a Hyrule\nen esta época\ntan alegre!\nYo... ¡debo poner estos\nsentimientos\nen verso!
 @37:26 Me encantan los festivales. ¡Es como\nver\ncómo tu ciudad se transforma en otro\nmundo!\nDe verdad te hace pensar en lo\nbien\nque estamos aquí...
-@37:27 Gente de todas partes viene a la Ciudad\nde\nHyrule para el {02}{03}Festival Picori{02}{00}.
+@37:27 Gente de todas partes viene a la Ciudad\nde\nHyrule para el {02}{03}Festival Minish{02}{00}.
 @37:28 Eres el chico de la casa del viejo\nMaestro\nHerrero, ¿verdad?\nSeguro que lo\nsabes, pero ¡es el mejor\nespadero que\nHyrule ha visto jamás!\nCada año me apunto\nal torneo para\nintentar ganar esa espada\nsuya.\nTodavía no he ganado y quizá nunca\nlo\nconsiga, ¡pero el torneo fue\ngenial!\nEl ganador de este año era una\ncara nueva.\nMe pregunto de dónde\nserá.\n¡Usó técnicas increíbles y ganó\ntodo\nel torneo en tiempo récord!
 @37:29 Me han enviado desde el {02}{02}Castillo de\nHyrule{02}{00},\nal norte, para vigilar los\nfestejos.
-@37:30 Nunca había visto a los {02}{02}Picori {02}{00}antes...
+@37:30 Nunca había visto a los {02}{02}Minish {02}{00}antes...
 @37:31 ¡Vosotros dos debéis de ser grandes\namigos!
-@37:32 ¡Voy a buscar {02}{02}Picori{02}{00}! ¡Mamá dijo\nque\nhabría {02}{02}Picori {02}{00}en el festival!
-@37:33 ¡Lo vi! ¡Había un {02}{02}Picori {02}{00}aquí hace\nun\nsegundo! ¡No, en serio!
-@37:34 ¡Este es mi primer {02}{03}Festival\nPicori{02}{00}!\nEntonces... ¿dónde están los\n{02}{02}Picori{02}{00}?
-@37:35 Día y noche, no para de hablar de que\nsi\nlos Picori esto, que si los Picori\naquello.\n¿No sabe que no son más que un\ncuento\ntonto para que los niños se porten\nbien?
+@37:32 ¡Voy a buscar {02}{02}Minish{02}{00}! ¡Mamá dijo\nque\nhabría {02}{02}Minish {02}{00}en el festival!
+@37:33 ¡Lo vi! ¡Había un {02}{02}Minish {02}{00}aquí hace\nun\nsegundo! ¡No, en serio!
+@37:34 ¡Este es mi primer {02}{03}Festival\nMinish{02}{00}!\nEntonces... ¿dónde están los\n{02}{02}Minish{02}{00}?
+@37:35 Día y noche, no para de hablar de que\nsi\nlos Minish esto, que si los Minish\naquello.\n¿No sabe que no son más que un\ncuento\ntonto para que los niños se porten\nbien?
 @37:36 Vuelvo de ver el torneo en el\n{02}{02}Castillo de\nHyrule{02}{00}.\n¡Te lo digo yo! ¡Ver todos esos\nduelos de\nespada me dio hambre!
 @37:37 Uf... Preparar el festival me ha\ndejado\nabsolutamente agotado...\nAun así,\nsolo disfruto viendo\ncómo se divierte la\ngente.
 @37:38 ¡Eh, eh! ¡Acércate!\n¡Prueba suerte! ¡Gana\nun premio!
-@37:39 Mi hermana y yo hemos venido de lejos\npara\nver el {02}{03}Festival Picori{02}{00} este\naño.\n¿Es verdad que el festival se llama\nasí por\nunos seres diminutos del tamaño\nde mi pulgar?\n¡Quiero ver cómo son!\n¿Sabes dónde\npuedo ir a verlos?
+@37:39 Mi hermana y yo hemos venido de lejos\npara\nver el {02}{03}Festival Minish{02}{00} este\naño.\n¿Es verdad que el festival se llama\nasí por\nunos seres diminutos del tamaño\nde mi pulgar?\n¡Quiero ver cómo son!\n¿Sabes dónde\npuedo ir a verlos?
 
-@34:2 {03}{00}{92}{04}{10}{00}¡Espera un momento, muchacho!\n¡Hemos\ntopado con algo importante!\nEl\nmundo de los {02}{02}Minish{02}{00} es muy pequeño.\nEres\ndemasiado grande para conocerlos\nahora.\n¿Eh? ¿Quiénes son los {02}{02}Minish{02}{00}? ¡Ah,\nsí! ¡Qué\ntonto soy! Déjame\nexplicártelo...\nLos humanos los llamáis\n«{02}{02}Picori{02}{00}», ¡pero\nellos se llaman a sí\nmismos {02}{02}Minish{02}{00}!\nQué curioso que, en el\nmundo de los humanos,\nsolo este bosque\nhaya conservado ese nombre...\nEn fin, en\nlo profundo del bosque\nconstruyeron una\naldea diminuta donde viven\nmuchos. Pero\npara entrar tendremos que\nhacerte un poco\nmás pequeño.\nMira eso. A primera vista\nparece un\nsimple tocón, ¿verdad?\n¡No!\n¡Ese tocón es un {02}{03}portal{02}{00} que la\ngente\nusaba antaño para cambiar de\ntamaño!\nCon mi ayuda, puedes usarlo\npara\n{02}{03}reducirte al tamaño de un\nMinish{02}{00}.\nSolo sube al tocón y pulsa {0C}{03}\npara\nencoger.\nPara volver a la normalidad,\nponte junto\nal tocón y pulsa {0C}{03}.\nLlévame\nhasta allí arriba y lo probamos.
+@34:2 {03}{00}{92}{04}{10}{00}¡Espera un momento, muchacho!\n¡Hemos\ntopado con algo importante!\nEl\nmundo de los {02}{02}Minish{02}{00} es muy pequeño.\nEres\ndemasiado grande para conocerlos\nahora.\n¿Eh? ¿Quiénes son los {02}{02}Minish{02}{00}? ¡Ah,\nsí! ¡Qué\ntonto soy! Déjame\nexplicártelo...\nLos humanos los llamáis\n«{02}{02}Minish{02}{00}», ¡pero\nellos se llaman a sí\nmismos {02}{02}Minish{02}{00}!\nQué curioso que, en el\nmundo de los humanos,\nsolo este bosque\nhaya conservado ese nombre...\nEn fin, en\nlo profundo del bosque\nconstruyeron una\naldea diminuta donde viven\nmuchos. Pero\npara entrar tendremos que\nhacerte un poco\nmás pequeño.\nMira eso. A primera vista\nparece un\nsimple tocón, ¿verdad?\n¡No!\n¡Ese tocón es un {02}{03}portal{02}{00} que la\ngente\nusaba antaño para cambiar de\ntamaño!\nCon mi ayuda, puedes usarlo\npara\n{02}{03}reducirte al tamaño de un\nMinish{02}{00}.\nSolo sube al tocón y pulsa {0C}{03}\npara\nencoger.\nPara volver a la normalidad,\nponte junto\nal tocón y pulsa {0C}{03}.\nLlévame\nhasta allí arriba y lo probamos.
 @35:12 Hola. Soy Percy, poeta laureado\nde\nHyrule.\n¿Y tú eres {06}{00}? ¡Oh, no,\nno! ¡El\nplacer es mío!\nViajo por todo el reino\nescribiendo\nversos allá donde voy.\nPero\naquí estoy, de vuelta tras una\nlarga\nausencia, y me encuentro el camino\ncortado.\nNo me parecería tan penoso si\nno\nhubiera perdido la mitad de mi {02}{01}piedra\nde fusión{02}{00}.\nCuando la desgracia cae sobre\nmi cabeza,\n¡lo hace a cántaros!\nCreo que\n{02}{03}se me pudo caer en la\nposada{02}{00} donde me\nalojé anoche...\nNo veo otra salida que\nponer estos\ntrágicos sucesos en verso.\n \n{02}{03}Veo estrellas tras el arcoíris,\n  pero no\npuedo alcanzarlas.\n  Aunque la piedra\nperdida es pequeña,\n  grande era su lugar\nen mi corazón.
 
 # --- Grupos 39-43: tesoro, cementerio, tienda y picolito ---
@@ -1745,10 +1745,10 @@
 @47:19 Arriba, en el tejado, hay un torbellino\nenorme\nque puede llevarte al {02}{02}palacio{02}{00}.
 @47:20 En esta torre vive la gente de la\ntribu\ndel Viento.\nDejamos hace mucho vuestro\nmundo de la\nsuperficie para servir a un\ndeber mayor.\nAhora protegemos la puerta\ndel {02}{02}Palacio\nde los Vientos{02}{00}, donde yace el\n{02}{01}Elemento Viento{02}{00}.
 @47:21 Aunque somos de la tribu del Viento,\nnosotros\ntambién vivimos antaño en la\nsuperficie.\nEl lugar que llamáis {02}{02}Ruinas\ndel Viento{02}{00}\nfue, para nosotros, un hogar.
-@47:22 ¡Guau! ¡Me has asustado!\n\n¡Normalmente\nlos de la superficie no pueden\ncaminar\nsobre las nubes como nosotros!\nMi hermana\ny yo fuimos al {02}{03}Festival\nPicori{02}{00} en la\nCiudad de Hyrule\ny, al volver, ¡había\nmonstruos por todas partes!\nSi pudiera\nfusionar un {02}{01}fragmento{02}{00},\npodría llamar a un\nbuen viento de regreso...\nPero hay\nmonstruos por ahí y no\npuedo buscar\nfragmentos.\n¡Y aunque pudiera, no\nencuentro a nadie\ncon quien\nfusionarlos!\n¡Pero tú pareces bastante\nfuerte!\n\n¿Crees que podrías\nbuscar\n{02}{01}fragmentos {02}{00}por mí?\nSi lo haces,\n¡te hablaré de un buen\nsitio para\n{02}{03}fusionar{02}{00}!
-@47:23 Ay, esto es malo. Esto es muy\nmalo...\n\n¡Oh, eh! ¡Vaya... mira\neso!\n\n¡Nunca había visto a alguien de la\nsuperficie\ncaminar sobre las\nnubes!\n¡Debes de tener un corazón muy\npuro!\n\nQuizá alguien como tú escuche\nmi\ntriste historia.\nVerás, bajé a la\nsuperficie con mi hermana\npara el\n{02}{03}Festival Picori{02}{00}...\n¡Pero de camino a casa\nnos quedamos sin\nviento! ¡Ahora no\npodemos volver!
+@47:22 ¡Guau! ¡Me has asustado!\n\n¡Normalmente\nlos de la superficie no pueden\ncaminar\nsobre las nubes como nosotros!\nMi hermana\ny yo fuimos al {02}{03}Festival\nMinish{02}{00} en la\nCiudad de Hyrule\ny, al volver, ¡había\nmonstruos por todas partes!\nSi pudiera\nfusionar un {02}{01}fragmento{02}{00},\npodría llamar a un\nbuen viento de regreso...\nPero hay\nmonstruos por ahí y no\npuedo buscar\nfragmentos.\n¡Y aunque pudiera, no\nencuentro a nadie\ncon quien\nfusionarlos!\n¡Pero tú pareces bastante\nfuerte!\n\n¿Crees que podrías\nbuscar\n{02}{01}fragmentos {02}{00}por mí?\nSi lo haces,\n¡te hablaré de un buen\nsitio para\n{02}{03}fusionar{02}{00}!
+@47:23 Ay, esto es malo. Esto es muy\nmalo...\n\n¡Oh, eh! ¡Vaya... mira\neso!\n\n¡Nunca había visto a alguien de la\nsuperficie\ncaminar sobre las\nnubes!\n¡Debes de tener un corazón muy\npuro!\n\nQuizá alguien como tú escuche\nmi\ntriste historia.\nVerás, bajé a la\nsuperficie con mi hermana\npara el\n{02}{03}Festival Minish{02}{00}...\n¡Pero de camino a casa\nnos quedamos sin\nviento! ¡Ahora no\npodemos volver!
 @47:24 He oído que a veces hay {02}{01}fragmentos de\nfusión {02}{00}\nescondidos entre las nubes.
-@47:25 El {02}{02}Festival Picori {02}{00}de la Ciudad de\nHyrule\nfue muy divertido y todo\neso...\n¡Pero qué mala suerte quedarse\nvarados\naquí sin poder volver a casa!
+@47:25 El {02}{02}Festival Minish {02}{00}de la Ciudad de\nHyrule\nfue muy divertido y todo\neso...\n¡Pero qué mala suerte quedarse\nvarados\naquí sin poder volver a casa!
 @47:26 Este es el hogar de la {02}{02}tribu del\nViento{02}{00}.\nDejamos la superficie hace\nmucho.\nAhora custodiamos la entrada\nal\n{02}{02}Palacio de los Vientos{02}{00}...\n...En este\npalacio reside el\n{02}{01}Elemento\nViento{02}{00}.\nPero... ese agujero del\nque acabas de salir...\n¿Lleva al mundo de\nabajo?\nOh, ¿apareció después de que\n{02}{03}fusionaras\npiedras{02}{00}? Es asombroso.
 
 # --- Grupo 48: los cucos de la ciudad ---
@@ -1808,7 +1808,7 @@
 # --- Grupo 50: el abuelo herrero y Ezlo descansa ---
 @50:1 Oh, bienvenido de nuevo, {06}{00}. ¡Vaya,\nqué\nmucho más fuerte te veo!\nSi te\ncansas, echa una siesta arriba\nen tu\ncuarto.\nEstoy ocupado forjando espadas\npara\nlos guardias, para frenar a los\nmonstruos.\nOjalá pudiera hacer más, pero\npor ahora\nnecesitamos que salves a la\n{02}{02}princesa Zelda{02}{00}.
 @50:2 Eh, {06}{00}. ¡Cada vez que te veo,\ntienes más\nconfianza!\nOye, ¿has estado en la\n{02}{02}Zapatería\nde Rem{02}{00}? Sus zapatos son los\nmejores.\nSeguro que podrían ayudarte en\ntu\nmisión. ¿Por qué no le haces una\nvisita?
-@50:3 Eh, {06}{00}. Te veo mucho más\nduro estos\ndías...\nOye, ¿has ido ya a\nla\n{02}{02}biblioteca{02}{00}?{02}{02}\n{02}{00}He oído a unos niños\ndecir que\nhan visto Picori allí...\nPensé\nque quizá te ayudaría\nen tu misión.
+@50:3 Eh, {06}{00}. Te veo mucho más\nduro estos\ndías...\nOye, ¿has ido ya a\nla\n{02}{02}biblioteca{02}{00}?{02}{02}\n{02}{00}He oído a unos niños\ndecir que\nhan visto Minish allí...\nPensé\nque quizá te ayudaría\nen tu misión.
 @50:4 Bienvenido de nuevo, {06}{00}. ¡Siento que\nhace\nmucho que no vienes a verme!\nParece que\nsolo te falta encontrar\nun {02}{01}elemento{02}{00} más.\nOye...\n¿Has estado en el {02}{03}Valle Real{02}{00},\nal\noeste del Castillo de Hyrule?\nAntes se\nllegaba allí fácilmente desde\nlas {02}{02}Tierras\nAltas de Trilby{02}{00}.\nPero ahora hay que tomar\nun camino\nsecreto para llegar.\nEstoy\nseguro de que estaba al {02}{03}oeste de\nla parte\nnorte del Campo de Hyrule{02}{00}...
 @50:5 Ah, me alegro mucho de que hayas\nvenido a\nverme, {06}{00}.\nParece que has estado en\ncasi\ntodos los rincones de Hyrule,\n¿eh?\nPero oye...\n¿Has estado en las\n{02}{02}Cataratas del Velo{02}{00}?\nDicen que nadie ha\nencontrado nunca la\nfuente de agua que\nlas alimenta.\nAsí que si vas\nallí,\n¡prométeme que tendrás cuidado!
 @50:6 Me alegro mucho de que estés a salvo,\n{06}{00}.\n\nDicen que están pasando cosas\nterribles\nen el{02}{02} Castillo de Hyrule{02}{00}.\nPor\ncierto...{02}{02}\n\n{02}{00}¿Has usado todos los\n{02}{01}objetos\n{02}{00}que has encontrado hasta ahora?\nSi te\natascas, ¡tendrás que probar\ntodos tus\ntrucos!\nPrueba a usar todo lo de\ntu\ninventario, ¿vale? Ya darás con\nello...
@@ -1848,10 +1848,10 @@
 @52:36 ¡No olvides comer tus verduras!\n¡Todos\nnecesitamos una dieta equilibrada!
 @52:37 ¡Me encanta ir de comprassss!{0F}{0B}\n\nOh, y no\ndebo olvidarme de comprar ese\n{02}{01}pan\nsorpresa {02}{00}de Pita.
 @52:38 ¡Oh! ¡Acabo de acordarme!\n\n¡Tengo que\nrecoger una botella de\n{02}{01}leche Lon Lon{02}{00} de\ncamino a casa!
-@52:41 Oye, ¿quieres saber lo que he oído?\n¡He\noído que solo los niños ven a los\n{02}{02}Picori{02}{00}!
-@52:42 Me pregunto si nosotros también\npodremos\nver a los {02}{02}Picori{02}{00}.
-@52:43 ¡Eh, yo también quiero ver a los\n{02}{02}Picori{02}{00}!\n¿Puedo? ¿Puedo? ¿Eh? ¿Puedo?
-@52:44 ¡Eh, {02}{02}Picori{02}{00}! ¡Oh, {02}{02}Picori{02}{00}!\n¡Salid a jugar\ncon nosotros!
+@52:41 Oye, ¿quieres saber lo que he oído?\n¡He\noído que solo los niños ven a los\n{02}{02}Minish{02}{00}!
+@52:42 Me pregunto si nosotros también\npodremos\nver a los {02}{02}Minish{02}{00}.
+@52:43 ¡Eh, yo también quiero ver a los\n{02}{02}Minish{02}{00}!\n¿Puedo? ¿Puedo? ¿Eh? ¿Puedo?
+@52:44 ¡Eh, {02}{02}Minish{02}{00}! ¡Oh, {02}{02}Minish{02}{00}!\n¡Salid a jugar\ncon nosotros!
 @52:46 ¡Creo que el alcalde hace un buen\ntrabajo,\ndiga lo que diga la gente!
 @52:47 No diré nada, aunque caves un\nagujero\nenorme en mi jardín.
 @52:48 Ay... Parece que se lo pasan bien\nahí\ndentro. Ojalá pudiera jugar con\nellos...
@@ -1894,7 +1894,7 @@
 @53:38 ¡Claro que aquí no hay fuerza de la\nluz!\n¿En qué estaría pensando? ¡Qué tonto\nsoy!
 @53:39 Estamos en medio de una clase muy\nimportante,\nasí que no puedo dejarte\nentrar.
 @53:40 Hola, {06}{00}. Ahora estudiamos\nLiteratura de\nHyrule.\n¡Es una asignatura\nimportantísima!
-@53:41 La leyenda dice que el {02}{01}poder de la\nluz{02}{00}\nfue entregado a los humanos por los\n{02}{02}Picori{02}{00}.\n¿Existirá de verdad? Quiero\ndecir,\nnadie lo ha VISTO nunca.
+@53:41 La leyenda dice que el {02}{01}poder de la\nluz{02}{00}\nfue entregado a los humanos por los\n{02}{02}Minish{02}{00}.\n¿Existirá de verdad? Quiero\ndecir,\nnadie lo ha VISTO nunca.
 @53:42 Hay una vieja leyenda que dice que\nalgo\ngrande ocurrirá cuando suene la\ncampana de Hyrule.
 @53:43 Pero nadie sabe exactamente\nqué pasará...
 @53:44 Vine a consultar un libro.\n\nYa deberían\nhaber abierto.\nMe pregunto qué pasa...
@@ -2014,7 +2014,7 @@
 @55:53 Estoy plantando mi parterre.
 @55:54 Hay que regarlas todos los días.
 @55:55 Está bien coleccionar figuras, pero\nsi\nalguien empieza a llamarlas muñecos,\nbueno...\nSería de muy mal gusto.
-@55:56 Me pregunto si la fuerza les\nparecerá\nenorme a los Picori...
+@55:56 Me pregunto si la fuerza les\nparecerá\nenorme a los Minish...
 @55:57 Ese perro de allí no es muy amable\ncon\nlos extraños, pero eso me gusta en un\nperro.
 @55:58 ¡Buen trabajo llegando hasta aquí!\nNo\nrecibo muchas visitas, como\nimaginarás.
 @55:59 ¡Vaya! ¡Has llegado muy rápido!\nEstás\nlleno de sorpresas, ¿eh?
@@ -2176,7 +2176,7 @@
 @62:12 ¡Me encanta la escuela!
 
 # --- Grupo 63: Tingle, sus hermanos y otros ---
-@63:0 ¡Vaya, cuando yo tenía tu edad era\nun\nverdadero terremoto!\nDerrotaba a mis\nrivales a diestro y siniestro\nen el\ntorneo del Festival Picori.\nOh, en mi\népoca era alguien...\nDe hecho, aún tengo\nmuchos de los\n{02}{01}fragmentos de fusión {02}{00}que\ngané en el torneo.\nAsí que no te diría\nque no si te\ninteresara fusionar\npiedras...
+@63:0 ¡Vaya, cuando yo tenía tu edad era\nun\nverdadero terremoto!\nDerrotaba a mis\nrivales a diestro y siniestro\nen el\ntorneo del Festival Minish.\nOh, en mi\népoca era alguien...\nDe hecho, aún tengo\nmuchos de los\n{02}{01}fragmentos de fusión {02}{00}que\ngané en el torneo.\nAsí que no te diría\nque no si te\ninteresara fusionar\npiedras...
 @63:1 Esa gorra verde y esa ropa\nverde...\n¿Eres... quizá... un\nhada?\n¡Guaaau!{0F}{0B} ¡Lo sabía! ¡Lo\nsabía!\n¡{02}{02}Tingle{02}{00} también quiere ser un\nhada!{0F}{0B}\nDe hecho, ¡{02}{02}Tingle {02}{00}tiene unos\n{02}{01}fragmentos{02}{00}!\nY también he dado {02}{01}fragmentos{02}{00}\na\nmis hermanos.\nSi consigues fusionar\n{02}{01}fragmentos{02}{00} conmigo y\ncon cada uno de mis\nhermanos...\nNo quiero adelantarte nada,\npero\n¡recibirás algo muy, muy, MUY\nbueno!\n¡Buena suerte, señor Hada!
 @63:2 ¿Has encontrado ya a todos los\nhermanos\nde Tingle?\nSi consigues\nfusionar {02}{01}fragmentos{02}{00} con todos,\nTingle\ntiene una sorpresa para ti...\nDe hecho,\nTingle está SEGURO de que\nrecibirás algo\nmuy, muy, MUY bueno.\n¡Buena suerte, señor\nHada!
 @63:3 ¡Eh! ¡Señor Hada! ¡Tienes unos\nfragmentos\nmuy bonitos!\n¿Te sorprendería\nsaber que Tingle\ntambién tiene uno nuevo?\n¡Fusionémoslos!
@@ -2527,10 +2527,10 @@
 # --- Grupo 73: la biblioteca de Hyrule ---
 @73:1 ¡Bienvenido a la biblioteca!\n\nOye, ¿no\neres el nieto de Smith,\n{06}{00}?\n¿Hm? ¿Los\nlibros que faltan en la\nestantería del\nsegundo piso?\nSí, llevan prestados\nbastante tiempo.\n¡Están MUY\nretrasados!\n{07}I{02}\n
 @73:2 Toma el {02}{01}Bestiario de Hyrule{02}{00}, por\nejemplo.\nLleva siglos fuera.\nLo sacó {02}{03}una chica con\nun gato{02}{00}. Dijo que\ntenía un gato nuevo en\ncasa.\nQuería saber más de él, la verdad.
-@73:3 El siguiente libro retrasado es...\nA\nver...\nAh, sí. ¡Claro! ¡La {02}{01}Leyenda de\nlos\nPicori{02}{00}! ¡Hace siglos que falta!\nLo\nsacó un {02}{03}erudito algo despistado{02}{00},\ncreo...
+@73:3 El siguiente libro retrasado es...\nA\nver...\nAh, sí. ¡Claro! ¡La {02}{01}Leyenda de\nlos\nMinish{02}{00}! ¡Hace siglos que falta!\nLo\nsacó un {02}{03}erudito algo despistado{02}{00},\ncreo...
 @73:4 Y el último libro que aún nos falta\nes la\n{02}{01}Historia de las máscaras{02}{00}.\nCreo que lo\nsacó {02}{02}Hagen{02}{00},\nel alcalde.\n¡Cómo puede\ntener un libro de la\nbiblioteca tanto\ntiempo! ¡Es un cargo público!
 @73:6 ¡Eh! ¡Mira eso! ¡Nuestro ejemplar\nperdido\ndel {02}{01}Bestiario de Hyrule{02}{00}!\n{06}{00},\n¿devuelves este libro?\n¡Muchas\ngracias!\n¡No puedo expresar cuánto\ndeseo\nvolver a ponerlo en su sitio!
-@73:7 ¡Cielo santo, mira eso!\n\n¡Es nuestro\nejemplar de la {02}{01}Leyenda de los\nPicori{02}{00}!\n¡Llevaba tanto tiempo\nprestado!\n{06}{00}, mereces una medalla\npor todo\nesto.\nEstoy conmovido...\nProfundamente\nconmovido por este gesto\ntan considerado.
+@73:7 ¡Cielo santo, mira eso!\n\n¡Es nuestro\nejemplar de la {02}{01}Leyenda de los\nMinish{02}{00}!\n¡Llevaba tanto tiempo\nprestado!\n{06}{00}, mereces una medalla\npor todo\nesto.\nEstoy conmovido...\nProfundamente\nconmovido por este gesto\ntan considerado.
 @73:8 ¡Mira eso! ¡No me lo creo!\n¡Es nuestro\nejemplar de la\n{02}{01}Historia de las\nmáscaras{02}{00}!\nEse alcalde nuestro es todo un\npersonaje,\n¿verdad?\nDebió de costar\nbastante recuperarlo de él.\n¡Eres mi\nnueva persona favorita,\n{06}{00}! ¡Muchas\ngracias!
 @73:12 Sabes, {06}{00}, ¡ya has\ndevuelto todos nuestros\nlibros atrasados!\n¡Ahora por fin puedo\nordenar la estantería\ndel segundo\npiso!\n¡Eh, {02}{02}Sturgeon{02}{00}! ¡Hay libros que\ncolocar!
 @73:13 ¡Sí, sí! ¡Aquí estoy! ¡Los colocaré\nen un\nsantiamén!
@@ -2623,7 +2623,7 @@
 # --- Grupo 77: el Dr. Izquierdo ---
 @77:1 ¡¿Qué es todo esto?!\n¡Estoy ocupado, ¿no\nlo ves?!\n¡No molestes mi investigación!\nSi no tienes\nasunto, ¡largo! ¡Me has\noído!
 @77:2 ¿Qué, eh?\n¿Un libro? ¿De la\nbiblioteca?\nAh, sí... claro. Sabía que\neste día\nllegaría. Por favor, pasa.
-@77:5 Soy investigador de la leyenda y el\nsaber\nPicori. Me llamo {02}{03}Dr.\nIzquierdo{02}{00}.\nHas venido por ese libro,\nla\n{02}{01}Leyenda de los Picori{02}{00},\n¿verdad?\nBueno, odio decirlo, pero hace\nvarios\ndías que no lo veo.\n¿Quizá se lo\nhaya llevado un\nratoncillo\ntravieso?\nBueno, seguro que\nestá en esta casa\nen algún sitio. Solo\nque no sé dónde.\nPero ahora estoy muy\nocupado, así que\n¿por qué no lo buscas tú\nmismo?
+@77:5 Soy investigador de la leyenda y el\nsaber\nMinish. Me llamo {02}{03}Dr.\nIzquierdo{02}{00}.\nHas venido por ese libro,\nla\n{02}{01}Leyenda de los Minish{02}{00},\n¿verdad?\nBueno, odio decirlo, pero hace\nvarios\ndías que no lo veo.\n¿Quizá se lo\nhaya llevado un\nratoncillo\ntravieso?\nBueno, seguro que\nestá en esta casa\nen algún sitio. Solo\nque no sé dónde.\nPero ahora estoy muy\nocupado, así que\n¿por qué no lo buscas tú\nmismo?
 @77:6 Hace un rato cayó un libro con un\n«¡PUM!»\n¡Me dio un susto tal que el\ncorazón\nme dio un vuelco!
 @77:7 ¿Me has encontrado y devuelto el\nlibro?\nTe lo agradezco mucho.\nToma,\ndéjame contarte algo\ninteresante como\nagradecimiento.\nVerás, los Minish no\nsiempre vivieron en\nnuestro mundo.\n¡No,\ncruzaron un portal secreto hace\nmuchas\nedades de su mundo al nuestro!\n¡Pero no\nse lo digas a nadie! ¡Es un\nconocimiento\nvalioso que solo yo poseo!\nY lo descubrí\ntras horas de estudio\nde un libro\nincreíblemente antiguo.
 @77:8 ¿Así que has venido a saber más de\nlos\nMinish?\nBueno, puedo compartir un dato\nmás,\nsupongo... Podría serte útil.\nEl\nportal que nos une al mundo Minish\nse\nabre solo una vez cada 100 años.\nEso\nsignifica que los Minish de ahora\nson\ndescendientes de los que vinieron\nantes.\n¡Así es! ¡Esos Minish llegaron\nhace\n100 años, o incluso antes!\nAhora\nque el portal está abierto este\naño,\nquizá lleguen Minish nuevos...
@@ -2759,7 +2759,7 @@
 @79:74 Todo lo que tiene un comienzo\ntambién\ntiene un final.\nDicho de otro modo, todas\nlas cosas se\nacercan a su fin...\nIncluso\ndesde el momento en que empiezan.
 @79:75 El fin está cerca.\nPara mí, y también\npara ti.
 @79:76 El {02}{02}Castillo de Hyrule{02}{00} está cubierto de\noscuridad.\nEste es el fin.
-@79:77 Nunca imaginé que algo así\nocurriría en\nmi vida.\nMe pregunto si los {02}{02}Picori\n{02}{00}aparecerán\ny nos ayudarán una vez más...
+@79:77 Nunca imaginé que algo así\nocurriría en\nmi vida.\nMe pregunto si los {02}{02}Minish\n{02}{00}aparecerán\ny nos ayudarán una vez más...
 @79:78 ¡Salud! ¡Yupii! ¡Salud!\nAlza tu leche\npara brindar.\n¡Nunca supe que no hacer la\ncena\ntendría tales consecuencias!
 @79:79 ¡Nunca supe que no hacer la cena\ntendría\ntales consecuencias!
 @79:81 Prueba a fusionar {02}{03}fragmentos de fusión{02}{00}\ncon\nmucha gente.\nHay mucha gente por ahí\nbuscando\nalguien con quien fusionar.
@@ -2787,11 +2787,11 @@
 @1:15 \n\n\n\n\n{02}{02}PRODUCTOR{02}{00}\n\nKeiji Inafune
 @1:16 \n\n\n{02}{02}PRODUCTOR\n    GENERAL{02}{00}\n\nShigeru Miyamoto
 @1:17 \n\n\n{02}{02}PRODUCTOR\n      EJECUTIVO{02}{00}\n\nSatoru Iwata
-@1:24 \n\n\n\nTodos los derechos, incluidos los de autor\ndel juego, el guion, la música y el programa,\nreservados por NINTENDO.
+@1:24 \n\n\n\nTodos los derechos de autor del juego,\nel guion, la música y el programa,\nreservados por NINTENDO.
 @1:25 Así concluyó la aventura de {06}{00}.
-@1:26 Pero seguramente este no es el final de las\naventuras de Zelda y {06}{00} en Hyrule.
+@1:26 Pero aún quedan aventuras por vivir\npara Zelda y {06}{00} en Hyrule.
 @1:27 \nLa leyenda continuará...
-@1:28 ...mientras el poder de la fuerza de la luz\nresuene a través de las edades.
+@1:28 ...mientras la fuerza de la luz\nresuene a través de las edades.
 
 # --- Grupo 3: Boletín del Espadachín ---
 @3:1 Este es el Boletín del Espadachín {0F}{10}1.\n\n¿Quieres leerlo?\n    {05}{03}{09}Sí  {05}{FF}No
@@ -2809,7 +2809,7 @@
 @3:13 Boletín del Espadachín {0F}{10}2\n    ¡El objeto imprescindible del año!\n¿Has visto esas chispas que se mueven\npor las paredes?\nTu espada no les hace nada, así que quizá\nhayas renunciado a combatirlas.\n¿Pero has probado TODOS tus objetos?\nPor ejemplo... ¿qué tal tu bumerán?\n¡Pruébalo! ¡Quizá te sorprendan\nlos resultados!\n{05}{03}{0E}Seguir leyendo  {05}{FF}Ya basta
 @3:14     ¡Enséñanos, maestro!\n¿Un monstruo te ha quitado el escudo?\nNo te desanimes.\nAún hay esperanza.\n¡Derrótalo rápido y quizá\nlo recuperes!\n{05}{03}{0F}Seguir leyendo  {05}{FF}Ya basta
 @3:15     Cotilleos de Hojaveloz\nEl Escudo Espejo...\nUn escudo hermoso y reluciente capaz de\nreflejar los disparos de los monstruos.\nPuedes usarlo para devolverles\nsus ataques.\nO eso dicen...\nPero solo es un rumor...\n{05}{03}{10}Seguir leyendo  {05}{FF}Ya basta
-@3:16     ¡Hojaveloz se despide!\n¡El número 2 ya está en la calle!\n¡Tenemos nuestra primera carta de un lector!\n¡Vamos a responderla!\n«Oye, Hojaveloz, ¿cuál es tu mejor\nrasgo?»\n¡Mis cejas! ¡Dedico mucho tiempo a\narreglarlas!\n¡Nos vemos en el número 3!\n¡Hasta la próxima, guerreros!
+@3:16     ¡Hojaveloz se despide!\n¡El número 2 ya está en la calle!\n¡Ha llegado la primera carta de un lector!\n¡Vamos a responderla!\n«Oye, Hojaveloz, ¿cuál es tu mejor\nrasgo?»\n¡Mis cejas! ¡Dedico mucho tiempo a\narreglarlas!\n¡Nos vemos en el número 3!\n¡Hasta la próxima, guerreros!
 @3:17 Boletín del Espadachín {0F}{10}3{02}{02}\n    {02}{00}¿Tienes una cuenta pendiente?\nEn tu viaje te encontrarás con unos\ncuantos esqueletos.\nPor eso el boletín de esta semana está\ndedicado a todos los rompehuesos.\nUn buen golpe seco en la cabeza basta.\n¡Ese es su punto débil!\nPrueba a golpearlos con un rayo de tu\n{02}{01}Bastón de Pacci{02}{00}.\nTambién puedes probar la {02}{01}Vasija Vendaval{02}{00}.\n¡La cabeza saldrá volando!\nSe desmoronan por completo cuando\npierden la cabeza.\n{05}{03}{12}Seguir leyendo  {05}{FF}Ya basta
 @3:18     ¡Enséñanos, maestro!\n¡Esos malditos Bob-omb!\nSi los golpeas con la espada, corren\npor todas partes y explotan.\nPero no te preocupes. ¡Este boletín\nte enseña a lidiar con ellos!\n¡Lo mejor son las flechas!\n¡Un disparo los derriba!\n¡Y puedes disparar desde lejos!\nTambién está la Vasija Vendaval...\nAspíralos y escúpelos, y hasta harán\nexplotar lo que golpeen.\n{05}{03}{13}Seguir leyendo  {05}{FF}Ya basta
 @3:19     Cotilleos de Hojaveloz\nLas Flechas de Luz son asombrosas...\n¡Atraviesan la hierba!\n¡Derriban a un monstruo de un golpe!\n¡Son prácticas! ¡Son geniales!\n¡Son un superultraobjeto!\nO eso parece...\nPero solo es un rumor...\n{05}{03}{14}Seguir leyendo  {05}{FF}Ya basta
@@ -2817,12 +2817,12 @@
 @3:21 Boletín del Espadachín {0F}{10}4\n    ¡Busca a los fuertes!\n¿Has visto alguna vez un monstruo dorado?\n\nAl fusionar fragmentos de fusión, quizá\ntengas la rara ocasión de encontrar uno.\nSon mucho más fuertes que la versión\nnormal de ese monstruo.\nClaro que, si derrotas a uno,\n¡conseguirás algo MUY bueno!\n¡Si ves uno, ve a combatirlo al instante!\n¡Déjalo todo y ve!\n{05}{03}{16}Seguir leyendo  {05}{FF}Ya basta
 @3:22     ¡Enséñanos, maestro!{02}{02}\n{02}{00}  Cómo lidiar con espinas\n¡Esos pequeños monstruos de espinas!\n¡Tu espada no les hace nada!\nPero si los golpeas con el\n{02}{01}escudo {02}{00}en alto, ¡se dan la vuelta!\nHay otras formas, sin embargo.\n¡Dales la vuelta con una {02}{01}bomba{02}{00}!\n¡O con tu {02}{01}Bastón de Pacci{02}{00}!\n¡O con una {02}{01}Estocada Descendente{02}{00} bien dada!{02}{03}\n{02}{00}¿Qué tal las opciones? ¡Seguro que\nte da vueltas la cabeza!\n{05}{03}{17}Seguir leyendo  {05}{FF}Ya basta
 @3:23     Cotilleos de Hojaveloz\nBombas Teledirigidas...\nUn secreto: ¡puedes hacerlas explotar\ncuando quieras! ¡¿A que es genial?!\nO eso parece...\nPero solo es un rumor...\n{05}{03}{18}Seguir leyendo  {05}{FF}Ya basta
-@3:24     ¡Hojaveloz se despide!\nFui al {02}{02}Rancho Lon Lon {02}{00}el otro día.\n¡Vi al fantasma de Hojaveloz el Primero\nderrotar a una vaca con las manos desnudas!\nFue un poco triste, la verdad...\n\n¡Nos vemos en el número 5!\n¡Hasta la próxima, guerreros!
+@3:24     ¡Hojaveloz se despide!\nFui al {02}{02}Rancho Lon Lon {02}{00}el otro día.\n¡Vi al fantasma de Hojaveloz el Primero\nvencer a una vaca con sus propias manos!\nFue un poco triste, la verdad...\n\n¡Nos vemos en el número 5!\n¡Hasta la próxima, guerreros!
 @3:25 Boletín del Espadachín {0F}{10}5\n    ¡Calienta a ese frío cretino!\n¿Has visto a un hechicero que te lanza\nmaldiciones de hielo?\n¡Sí, el que no para de desaparecer!\n¡Ese mismo!\nLa próxima vez que aparezca, ¡golpéalo\ncon tu linterna!\n¡Fuego contra hielo!\n¡Es la ley de la naturaleza!\n{05}{03}{1A}Seguir leyendo  {05}{FF}Ya basta
-@3:26     ¡Enséñanos, maestro!\nEsos moblins con cara de cerdo...\nLos ves por el Bosque Minish,\n¿verdad? ¿Son grandes y tontos?\n¡Pues también son ricos!\n{02}{03}¡Dales una paliza para conseguir dinero rápido!{02}{00}\n{05}{03}{1B}Seguir leyendo  {05}{FF}Ya basta
+@3:26     ¡Enséñanos, maestro!\nEsos moblins con cara de cerdo...\nLos ves por el Bosque Minish,\n¿verdad? ¿Son grandes y tontos?\n¡Pues también son ricos!\n{02}{03}¡Dales una paliza y gana dinero rápido!{02}{00}\n{05}{03}{1B}Seguir leyendo  {05}{FF}Ya basta
 @3:27     Cotilleos de Hojaveloz\nUna noticia sobre amuletos...\n¡Dicen que hay un amuleto misterioso que\nmejora tus habilidades si lo usas!\nBueno, eso es lo que he oído...\nPero solo es un rumor...\n{05}{03}{1C}Seguir leyendo  {05}{FF}Ya basta
 @3:28     ¡Hojaveloz se despide!\nFui a casa de Smith el otro día.\nEl viejo sigue teniendo buen aspecto.\n... ...\nPero ME preocupa un poco el\n{02}{03}tipo de mallas verdes {02}{00}de la colina...\n¡Nos vemos en el número 6!\n¡Hasta la próxima, guerreros!
-@3:29 Boletín del Espadachín {0F}{10}6\n    ¡Esto es lo que debes hacer!\n¿Has visto un monstruo envuelto en\nvendas? ¿Intenta agarrarte?\nPues un consejo de experto: {02}{03}las vendas arden{02}{00}\nfácilmente, ¡sobre todo en una momia!\nNo hace falta que lo explique, ¿verdad?\n¡Sí, ya sabes lo que voy a decir!\n¡Eso es, es hora de prenderles fuego!\n¡FUUUUSH!\n{05}{03}{1E}Seguir leyendo  {05}{FF}Ya basta
+@3:29 Boletín del Espadachín {0F}{10}6\n    ¡Esto es lo que debes hacer!\n¿Has visto un monstruo envuelto en\nvendas? ¿Intenta agarrarte?\nUn consejo de experto: {02}{03}las vendas arden{02}{00}\nfácilmente, ¡sobre todo en una momia!\nNo hace falta que lo explique, ¿verdad?\n¡Sí, ya sabes lo que voy a decir!\n¡Eso es, es hora de prenderles fuego!\n¡FUUUUSH!\n{05}{03}{1E}Seguir leyendo  {05}{FF}Ya basta
 @3:30     ¡Enséñanos, maestro!\nEsos Floor Master tan pesados...\nY sus molestos amigos,\nlos Wall Master...\nSon muy fastidiosos, pero dicen que\nsi derrotas a uno, ¡te harás rico!\nPero solo es un rumor... No me\nreclames si resulta ser falso.\n{05}{03}{1F}Seguir leyendo  {05}{FF}Ya basta
 @3:31     Cotilleos de Hojaveloz\nPesados que roban rupias...\nEsos bichos disfrazados de rupias llevan\ntiempo desplumando a muchos de vosotros.\n¡He oído que a los aventureros\ncodiciosos os dejan limpios!\nDe hecho, dicen que cuanto más\ncodicioso eres, más se llevan.\nO eso parece...\nPero solo es un rumor...\n{05}{03} Seguir leyendo  {05}{FF}Ya basta
 @3:32     ¡Hojaveloz se despide!\n¡Tenemos cartas de lectores otra vez!\n«¡Oye, Hojaveloz, ¿tienes\nalguna afición?»\n¡Entrenar!\n\n¡Nos vemos en el número 7!\n¡Hasta la próxima, guerreros!
@@ -2837,22 +2837,22 @@
 
 # --- Resto: textos sueltos ---
 @45:0 {05}{FF}Comprar {05}-\nNo comprar
-@56:32 Quizá debería volver pronto\nal\ncastillo...
-@56:34 Me rindo. No hay {02}{01}fuerza de la luz{02}{00}\npor\naquí. Estoy agotado.
-@56:35 Los niños son de lo más maravilloso\nque\nhay.
-@56:36 Ahora hay muchos menos guardias\nbuscando\nla {02}{01}fuerza de la luz {02}{00}...
-@56:37 Hay una vieja leyenda que dice que\nalgo\ngrande ocurrirá cuando suene la\ncampana de Hyrule.
-@56:38 Quizá ese momento llegue pronto...\nLo\npresiento.
-@56:39 Es un trabajo duro, ser el\n{02}{02}cartero{02}{00}.\n¡Míralo, siempre corriendo de\nacá para allá!
+@56:32 Quizá debería volver pronto\nal castillo...
+@56:34 Me rindo. No hay {02}{01}fuerza de la luz{02}{00}\npor aquí. Estoy agotado.
+@56:35 Los niños son de lo más maravilloso\nque hay.
+@56:36 Ahora hay muchos menos guardias\nbuscando la {02}{01}fuerza de la luz {02}{00}...
+@56:37 Hay una vieja leyenda que dice que\nalgo grande ocurrirá cuando suene\nla campana de Hyrule.
+@56:38 Quizá ese momento llegue pronto...\nLo presiento.
+@56:39 Es un trabajo duro, ser el\n{02}{02}cartero{02}{00}. ¡Míralo, siempre corriendo\nde acá para allá!
 @56:40 Grrrr... ¡GUAU GUAU!
 @56:41 ¡Guau guau!
 @56:42 ¡Auuuu!
 @56:43 Todos aquí son muy amables.
-@56:44 Dicen que tienes buenas posibilidades\nde\nconseguir {02}{01}figuras{02}{00} raras...\nSi\nentregas muchas {02}{01}Conchas\nMisteriosas{02}{00} de\nuna sola vez, claro...\nJejeje...
-@56:45 ¿¡...!?\n\n¡La {02}{01}fuerza de la luz{02}{00}!\n\nUf.\nEso sonó impresionante. Si la\nencuentro,\n¡lo gritaré así de fuerte!
-@79:89 No siempre puedes avanzar en línea\nrecta\nhacia sitios nuevos en la vida,\n¿sabes?\nHay que volver a lugares donde ya\nhas\nestado y reflexionar.\n¿Quién sabe?\nEsa reflexión tranquila quizá\nte dé la\noportunidad de {02}{03}fusionar piedras{02}{00}.
-@79:90 Sabes, fusionar {02}{03}fragmentos{02}{00} puede\ndarte\nmás que simples {02}{01}rupias{02}{00}...\nPuede\natraer gente nueva a un lugar o\nhasta\ncambiar el aspecto de la ciudad.\nY todo\neso también puede llevar\na la felicidad,\n¿no?
-@79:91 ¿Disfrutas fusionando\n{02}{03}fragmentos{02}{00}?\n¡Fusionar puede traer\nfelicidad a ti y\na tu compañero de\nfusión! ¡Eso digo yo!
-@79:92 Me pregunto qué pasa si fusionas\ntodos\nlos fragmentos que tiene una\npersona...
-@79:93 El {02}{02}Castillo de Hyrule{02}{00} ha caído en\nla\noscuridad...\nSupongo que no es\nmomento de fusionar\n{02}{03}fragmentos{02}{00}, ¿verdad?
-@79:94 ¡Tonterías! ¡Quizá lo necesitemos\nahora\nmás que nunca!\n¡Fusionar\n{02}{03}fragmentos{02}{00} puede traer\nfelicidad a la\ngente!\n¡Este es el verdadero motivo de\nfusionar,\namigo! ¡No las rupias, sino la\nfelicidad!
+@56:44 Dicen que es más fácil conseguir\n{02}{01}figuras{02}{00} raras si entregas muchas\n{02}{01}Conchas Misteriosas{02}{00} de una vez...\nJejeje...
+@56:45 ¿¡...!?\n\n¡La {02}{01}fuerza de la luz{02}{00}!\n\nUf. Eso sonó impresionante.\nSi la encuentro, ¡lo gritaré\nasí de fuerte!
+@79:89 No siempre puedes ir en línea recta\nhacia lugares nuevos, ¿sabes?\nHay que volver a donde ya has estado\ny reflexionar. ¿Quién sabe?\nQuizá así tengas la oportunidad\nde {02}{03}fusionar piedras{02}{00}.
+@79:90 Fusionar {02}{03}fragmentos{02}{00} puede darte\nmás que simples {02}{01}rupias{02}{00}...\nPuede atraer gente nueva o incluso\ncambiar el aspecto de la ciudad.\nY todo eso también puede traer\nfelicidad, ¿no?
+@79:91 ¿Disfrutas fusionando {02}{03}fragmentos{02}{00}?\n¡Puede traer felicidad tanto a ti\ncomo a tu compañero de fusión!\n¡Eso digo yo!
+@79:92 Me pregunto qué pasa si fusionas\ntodos los fragmentos que tiene\nuna persona...
+@79:93 El {02}{02}Castillo de Hyrule{02}{00} ha caído\nen la oscuridad...\nSupongo que no es momento de\nfusionar {02}{03}fragmentos{02}{00}, ¿verdad?
+@79:94 ¡Tonterías! ¡Quizá ahora haga\nmás falta que nunca!\n¡Fusionar {02}{03}fragmentos{02}{00} puede traer\nfelicidad a la gente!\n¡Por eso fusionamos, amigo!\n¡Por la felicidad, no por las rupias!
