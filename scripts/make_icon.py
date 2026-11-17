@@ -65,6 +65,17 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     img.save(out, sizes=[(16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
     print("escrito", out)
+    # el emblema del menú del reproductor: 32x32, BMP de 24 bits con magenta como color transparente (SDL lo lee sin más)
+    small = img.resize((32, 32), Image.LANCZOS)
+    bmp = Image.new("RGB", (32, 32), (255, 0, 255))
+    px, src = bmp.load(), small.load()
+    for y in range(32):
+        for x in range(32):
+            r, g, b, a = src[x, y]
+            if a >= 128:
+                px[x, y] = (r, g, b) if (r, g, b) != (255, 0, 255) else (254, 0, 255)
+    bmp.save(out.parent / "emblem.bmp")
+    print("escrito", out.parent / "emblem.bmp")
     if "--preview" in sys.argv:
         img.resize((256, 256), Image.LANCZOS).save(sys.argv[sys.argv.index("--preview") + 1])
 
